@@ -4,6 +4,45 @@
 
 This project stores **employer** and **job seeker (candidate)** accounts in a Postgres database when deployed on Vercel. Locally or without a database, auth falls back to `localStorage` (demo mode).
 
+## One database for the whole website
+
+The website uses **a single database** for all account data:
+
+- **One `DATABASE_URL`** — Set in your Vercel project (e.g. via Neon). Every API route uses this same connection.
+- **One Postgres instance** — The same Neon (or other) database holds both `employers` and `candidates` tables. There are no separate databases for different parts of the site.
+- **Same database in production and local** — To use the same database when developing locally, pull the env from Vercel and run the dev server:
+  1. `vercel login` (if needed), then `vercel env pull .env.development.local`
+  2. `vercel dev` — this loads `.env.development.local` and your API routes will use the same `DATABASE_URL` as production.
+
+## Get started with Neon (WRS project)
+
+This project uses **Neon** for Postgres:
+
+| | |
+|---|---|
+| **Neon org** | `org-blue-salad-15517518` |
+| **Neon project** | `curly-shadow-26743275` |
+
+**Steps:**
+
+1. **Open Neon**  
+   Go to [Neon Console](https://console.neon.tech) and select org **org-blue-salad-15517518** and project **curly-shadow-26743275**.
+
+2. **Create a branch/database** (if needed)  
+   In the project, use the default branch or create one. Note the connection string (e.g. from **Connection details** or **Dashboard**).
+
+3. **Run the schema**  
+   In Neon: **SQL Editor** → paste the contents of **`sql/schema.sql`** from this repo → **Run**. This creates the `employers` and `candidates` tables.
+
+4. **Connect Vercel to this Neon project**  
+   In [Vercel Marketplace](https://vercel.com/marketplace?category=storage&search=postgres) → **Neon** → **Add Integration** → choose your Vercel project. When prompted, link to the existing Neon project (**curly-shadow-26743275**) or allow Neon to inject `DATABASE_URL` for a new database in that project. Vercel will add `DATABASE_URL` to your project env.
+
+5. **Redeploy**  
+   Redeploy your Vercel app so the API routes use the new `DATABASE_URL`.
+
+6. **Local dev (optional)**  
+   Run `vercel env pull .env.development.local` in this repo, then `npm run dev` or `vercel dev` to use the same database locally.
+
 ## 1. Add a Postgres database to your Vercel project
 
 1. Open your [Vercel Dashboard](https://vercel.com/dashboard) and select the **wiring-website-WRS** (or your project) project.
@@ -61,7 +100,29 @@ Responses are JSON: `{ success: true, user }` or `{ success: false, error }`. Pa
 - Use **HTTPS** in production (Vercel provides this).
 - For production, consider adding rate limiting, CSRF, and stricter session handling (e.g. HTTP-only cookies or short-lived tokens).
 
-## 8. Troubleshooting
+## 8. Files for database and dashboards
+
+| Purpose | Path |
+|--------|------|
+| **Database** | |
+| Schema (tables) | `sql/schema.sql` |
+| DB connection | `api/lib/db.js` |
+| Password hash/verify | `api/lib/auth.js` |
+| **API (auth)** | |
+| Register employer | `api/auth/register/employer.js` |
+| Register candidate | `api/auth/register/candidate.js` |
+| Login | `api/auth/login.js` |
+| **Frontend** | |
+| Auth (API + fallback) | `js/auth.js` |
+| Employer dashboard | `employer/employer-dashboard.html` |
+| Candidate dashboard | `candidate/candidate-dashboard.html` |
+| Employer login/register | `employer/employer-login.html`, `employer/employer-register.html` |
+| Candidate login/register | `candidate/candidate-login.html`, `candidate/candidate-register.html` |
+| **Config** | |
+| Env (local) | `.env.development.local` (from `vercel env pull`; do not commit) |
+| Example env | `.env.example` |
+
+## 9. Troubleshooting
 
 - **"DATABASE_URL is not set"**  
   Add the Postgres integration (e.g. Neon) to the Vercel project and redeploy, or set `DATABASE_URL` in Environment Variables.

@@ -4,10 +4,12 @@
   "description": "Workforce Recruitment Solutions - recruitment, HR, talent platform",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": ">=18"
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "vercel dev",
+    "pull-env": "vercel env pull .env.development.local"
   },
   "dependencies": {
-    "@neondatabase/serverless": "^0.10.0"
+    "@neondatabase/serverless": "^0.10.4"
   }
 }

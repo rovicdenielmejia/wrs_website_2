@@ -4,6 +4,12 @@ This page explains **how the WRS website connects to a database** to store emplo
 
 ---
 
+## One database for the whole website
+
+The site uses **one database** for everything: one `DATABASE_URL`, one Postgres instance (e.g. Neon), with both `employers` and `candidates` tables. Production and local dev can use the same database: run `vercel env pull .env.development.local` and then `vercel dev` so the API uses that same `DATABASE_URL`.
+
+---
+
 ## What Gets Stored in the Database?
 
 | Who            | Table       | What we save (examples)                          |
