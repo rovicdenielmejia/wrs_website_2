@@ -1,16 +1,10 @@
 {
   "name": "wrs-website",
   "version": "1.0.0",
-  "description": "Workforce Recruitment Solutions - recruitment, HR, talent platform",
+  "description": "WRS - HR & Recruitment Solutions information and hiring site",
   "private": true,
-  "type": "module",
   "engines": { "node": ">=18" },
   "scripts": {
-    "dev": "vercel dev",
-    "pull-env": "vercel env pull .env.development.local",
-    "db:schema": "node scripts/run-schema.js"
-  },
-  "dependencies": {
-    "@neondatabase/serverless": "^0.10.4"
+    "dev": "vercel dev"
   }
 }

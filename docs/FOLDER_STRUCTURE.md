@@ -1,8 +1,8 @@
 # WRS Repository Folder Structure
 
-This document maps navigation items with sub-pages to their logical grouping for easy access and maintenance.
+This site is an **HR & Recruitment Solutions information and hiring site** (no database, no portals, no logins).
 
-## Current Structure (Implemented)
+## Current Structure
 
 ```
 wiring-website-WRS/
@@ -15,75 +15,52 @@ wiring-website-WRS/
 ├── blogs.html
 ├── book-consultation.html
 ├── thank-you.html
-├── admin.html
 ├── WorkforceRecruitmentSolution-hr.html
 │
-├── solutions/                    ← Solutions nav (mega menu)
-│   ├── solutions.html            (Main landing: 4 solution types)
-│   ├── employer-solutions.html   (Employers)
-│   └── enterprise-global.html    (Enterprise + Global)
+├── solutions/
+│   ├── solutions.html
+│   ├── employer-solutions.html
+│   └── enterprise-global.html
 │
-├── services/                     ← Services nav (dropdown)
-│   ├── services.html             (Recruitment)
-│   ├── hr-services.html          (HR Consultations)
-│   └── recruitment-process.html  (Process/Workforce Planning)
+├── services/
+│   ├── services.html
+│   ├── hr-services.html
+│   └── recruitment-process.html
 │
-├── employer/                     ← Employer portal
-│   ├── employer-login.html
-│   ├── employer-register.html
-│   └── employer-dashboard.html
-│
-├── candidate/                    ← Job seeker portal
-│   ├── candidate-login.html
-│   ├── candidate-register.html
-│   └── candidate-dashboard.html
-│
-├── platform/                     ← Platform & technology pages
+├── platform/
 │   ├── platform.html
 │   ├── automation.html
 │   └── ai-platform.html
 │
-├── legal/                        ← Legal pages
+├── legal/
 │   ├── privacy.html
 │   └── terms.html
 │
-├── css/                          ← Stylesheets
+├── css/
 │   ├── styles.css
 │   ├── styles-portal.css
-│   ├── admin-styles.css
 │   └── styles-hr.css
 │
-├── js/                           ← Scripts
-│   ├── script.js
-│   ├── admin-script.js
-│   └── auth.js
+├── js/
+│   └── script.js
 │
-├── docs/                         ← Documentation
-│   ├── FOLDER_STRUCTURE.md
-│   ├── NAVIGATION.md
-│   ├── CONFIGURATION.md
-│   └── … (deployment, setup guides)
-│
-├── Assets/                       ← Images, logos
+├── docs/
+├── Assets/
 ├── README.md
-├── LICENSE.md
-└── vercel.json, robots.txt, sitemap.xml, …
+├── vercel.json, robots.txt, sitemap.xml, …
 ```
 
 ## Navigation → File Mapping
 
-| Nav Item | Sub-pages | Location |
-|----------|-----------|----------|
-| **Solutions** | Main, Employers, Enterprise, Global | `solutions/` |
-| **Services** | Recruitment, HR Consultations, Recruitment Process | `services/` |
-| **Employer Portal** | Login, Register, Dashboard | `employer/` |
-| **Candidate Portal** | Login, Register, Dashboard | `candidate/` |
-| **Platform** | Main, Automation, AI | `platform/` |
-| **Legal** | Privacy, Terms | `legal/` |
-| **Main pages** | Home, Why Us, Pricing, About, Jobs, FAQ, Blogs | Root |
+| Nav Item   | Location      |
+|-----------|---------------|
+| Solutions | `solutions/`  |
+| Services  | `services/`   |
+| Platform  | `platform/`   |
+| Legal     | `legal/`      |
+| Main      | Home, Why Us, Pricing, About, Jobs, FAQ, Blogs, Book consultation | Root |
 
 ## Notes
 
-- **Root HTML** pages use `css/`, `js/` for assets; **subfolder** pages use `../css/`, `../js/`, `../Assets/`.
-- Vercel redirects point to the correct subfolder paths (e.g. `/solutions` → `/solutions/solutions.html`).
-- Documentation lives in `docs/`; README and LICENSE stay at root.
+- Root HTML uses `css/`, `js/`; subfolder pages use `../css/`, `../js/`, `../Assets/`.
+- All hiring and contact flows go through **Book a consultation** and **Jobs** (information and contact only).
