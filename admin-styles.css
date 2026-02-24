@@ -1,4 +1,4 @@
-/* Admin Dashboard Styles */
+/* Admin Dashboard Styles - Premium Dark */
 
 /* Login Screen */
 .login-screen {
@@ -6,21 +6,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+    background: linear-gradient(160deg, #050505 0%, #0A1020 50%, #111827 100%);
     padding: 2rem;
 }
 
 .login-container {
-    background-color: var(--white);
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(20px);
     padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
     max-width: 400px;
     width: 100%;
 }
 
 .login-container h1 {
-    color: var(--primary-red);
+    color: var(--accent-red);
     text-align: center;
     margin-bottom: 0.5rem;
 }
@@ -42,23 +44,25 @@
 .login-form label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--text-dark);
+    color: var(--text-primary);
     font-weight: 600;
 }
 
 .login-form input {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 2px solid var(--gray-medium);
-    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    background: #050505;
+    color: var(--text-primary);
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 .login-form input:focus {
     outline: none;
-    border-color: var(--primary-red);
-    box-shadow: 0 0 0 3px rgba(139, 38, 53, 0.1);
+    border-color: var(--accent-red);
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.15);
 }
 
 .login-form .btn-primary {
@@ -67,15 +71,16 @@
     margin-top: 0.5rem;
 }
 
-/* Admin Dashboard */
+/* Admin Dashboard - Dark Premium */
 .admin-dashboard {
     min-height: 100vh;
-    background-color: var(--gray-light);
+    background: #050505;
 }
 
 .admin-navbar {
-    background-color: var(--white);
-    box-shadow: 0 2px 10px var(--shadow);
+    background: rgba(10, 16, 32, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     padding: 1rem 0;
     margin-bottom: 2rem;
 }
@@ -88,7 +93,7 @@
 
 .admin-nav-brand h1 {
     font-size: 1.5rem;
-    color: var(--primary-red);
+    color: var(--accent-red);
     margin: 0;
 }
 
@@ -111,12 +116,13 @@
     padding: 0 20px;
 }
 
-/* Admin Sidebar */
+/* Admin Sidebar - Glass */
 .admin-sidebar {
-    background-color: var(--white);
-    border-radius: 12px;
+    background: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
     padding: 1.5rem;
-    box-shadow: 0 2px 10px var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.06);
     height: fit-content;
     position: sticky;
     top: 100px;
@@ -140,12 +146,12 @@
 }
 
 .admin-menu-item:hover {
-    background-color: var(--cream);
-    color: var(--primary-red);
+    background: rgba(225, 6, 0, 0.1);
+    color: var(--accent-red);
 }
 
 .admin-menu-item.active {
-    background-color: var(--primary-red);
+    background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
     color: var(--white);
 }
 

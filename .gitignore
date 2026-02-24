@@ -36,6 +36,9 @@ desktop.ini
 # Netlify
 .netlify/
 
+# Vercel
+.vercel/
+
 # Build files (if any)
 dist/
 build/

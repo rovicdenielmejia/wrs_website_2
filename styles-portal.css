@@ -1,4 +1,4 @@
-/* WRS Portal & Conversion Styles */
+/* WRS Portal & Conversion Styles - Premium Dark */
 
 .hero-cta-grid {
     display: flex;
@@ -13,23 +13,24 @@
 }
 
 .cta-button--employer {
-    background: #0a6e3d;
-    border-color: #0a6e3d;
+    background: linear-gradient(135deg, var(--accent-blue), #1557b0);
+    border: none;
+    box-shadow: 0 4px 20px rgba(30, 115, 216, 0.3);
 }
 
 .cta-button--employer:hover {
-    background: #085d33;
-    border-color: #085d33;
+    box-shadow: 0 0 24px rgba(30, 115, 216, 0.4);
 }
 
 .cta-button--candidate {
-    background: #1a5fb4;
-    border-color: #1a5fb4;
+    background: linear-gradient(135deg, var(--accent-gold), #d4a000);
+    color: #0A1020;
+    border: none;
+    box-shadow: 0 4px 20px rgba(245, 180, 0, 0.25);
 }
 
 .cta-button--candidate:hover {
-    background: #1553a0;
-    border-color: #1553a0;
+    box-shadow: 0 0 24px rgba(245, 180, 0, 0.35);
 }
 
 .nav-cta {
@@ -39,17 +40,17 @@
 }
 
 .nav-cta--employer {
-    background: rgba(10, 110, 61, 0.2);
-    color: #4ade80 !important;
+    background: rgba(30, 115, 216, 0.15);
+    color: #60a5fa !important;
 }
 
 .nav-cta--candidate {
-    background: rgba(26, 95, 180, 0.2);
-    color: #62a0ea !important;
+    background: rgba(245, 180, 0, 0.15);
+    color: #fbbf24 !important;
 }
 
-.portfolio-card--employer { border-left: 4px solid #0a6e3d; }
-.portfolio-card--candidate { border-left: 4px solid #1a5fb4; }
+.portfolio-card--employer { border-left: 3px solid var(--accent-blue); }
+.portfolio-card--candidate { border-left: 3px solid var(--accent-gold); }
 
 .conversion-section {
     padding: 4rem 0;
@@ -63,29 +64,36 @@
     margin-top: 2rem;
 }
 
+/* Glass conversion cards */
 .conversion-card {
-    background: var(--bg-elevated);
-    border: 1px solid var(--border-subtle);
-    border-radius: 12px;
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 2rem;
     text-align: center;
+    transition: all 0.3s ease;
+}
+
+.conversion-card:hover {
+    box-shadow: var(--shadow-neon);
 }
 
 .conversion-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: var(--text-dark);
+    color: var(--text-primary);
 }
 
 .conversion-card p {
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 
 .conversion-card .link-text {
     display: block;
     margin-top: 1rem;
-    color: var(--primary-red);
+    color: var(--accent-red);
     font-weight: 500;
 }
 
@@ -99,14 +107,17 @@
     margin-top: 70px;
 }
 
+/* Glass auth card */
 .auth-card {
     width: 100%;
     max-width: 420px;
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 12px;
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 2.5rem;
-    box-shadow: 0 8px 32px var(--shadow);
+    box-shadow: 0 12px 48px var(--shadow);
 }
 
 .auth-card h1 {
@@ -139,7 +150,7 @@
 
 .auth-tabs a.active,
 .auth-tabs a:hover {
-    background: var(--primary-red);
+    background: linear-gradient(135deg, var(--accent-red), var(--accent-orange));
     color: white;
 }
 
@@ -157,9 +168,9 @@
     width: 100%;
     padding: 0.65rem 0.9rem;
     border: 1px solid var(--border-subtle);
-    border-radius: 8px;
+    border-radius: 10px;
     background: var(--bg-body);
-    color: var(--text-dark);
+    color: var(--text-primary);
 }
 
 .auth-card button[type="submit"] {
@@ -177,10 +188,10 @@
 }
 
 .auth-card .auth-footer a {
-    color: var(--primary-red);
+    color: var(--accent-red);
 }
 
-/* Portal Dashboard */
+/* Portal Dashboard - Dark Premium */
 .portal-dashboard {
     padding-top: 90px;
     min-height: 100vh;
@@ -192,8 +203,9 @@
     top: 70px;
     bottom: 0;
     width: 260px;
-    background: var(--bg-surface);
-    border-right: 1px solid var(--border-subtle);
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    border-right: 1px solid var(--glass-border);
     padding: 1.5rem 0;
 }
 
@@ -214,8 +226,8 @@
 
 .portal-sidebar a:hover,
 .portal-sidebar a.active {
-    color: var(--primary-red);
-    background: rgba(208, 74, 90, 0.1);
+    color: var(--accent-red);
+    background: rgba(225, 6, 0, 0.08);
 }
 
 .portal-main {
@@ -232,10 +244,12 @@
     margin-bottom: 2rem;
 }
 
+/* Glass dashboard cards */
 .dashboard-card {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 12px;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
@@ -263,7 +277,7 @@
 .stat-box .value {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-red);
+    color: var(--accent-red);
 }
 
 .stat-box .label {
@@ -292,16 +306,17 @@
 }
 
 .platform-card {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 12px;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 1.5rem;
 }
 
 .platform-card h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: var(--primary-red);
+    color: var(--accent-red);
 }
 
 .platform-card p {
@@ -319,23 +334,24 @@
 }
 
 .pricing-card {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
-    border-radius: 12px;
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
     padding: 2rem;
     position: relative;
 }
 
 .pricing-card--featured {
-    border-color: var(--primary-red);
-    box-shadow: 0 4px 20px rgba(208, 74, 90, 0.15);
+    border-color: var(--accent-red);
+    box-shadow: var(--shadow-neon);
 }
 
 .pricing-badge {
     position: absolute;
     top: -10px;
     right: 1rem;
-    background: var(--primary-red);
+    background: var(--accent-red);
     color: white;
     font-size: 0.75rem;
     font-weight: 600;
@@ -365,8 +381,8 @@
 }
 
 .pricing-features {
-    background: var(--bg-surface);
-    border: 1px solid var(--border-subtle);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 2rem;

@@ -12,18 +12,20 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+            background: linear-gradient(160deg, #050505 0%, #0A1020 50%, #111827 100%);
             padding: 2rem;
         }
         
         .thank-you-card {
-            background-color: var(--white);
-            border-radius: 12px;
+            background: rgba(17, 24, 39, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
             padding: 3rem;
             max-width: 600px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5);
             animation: fadeIn 0.5s ease-out;
         }
         
@@ -31,7 +33,7 @@
             width: 100px;
             height: 100px;
             margin: 0 auto 2rem;
-            background-color: var(--cream);
+            background: rgba(225, 6, 0, 0.12);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -41,31 +43,32 @@
         .thank-you-icon svg {
             width: 60px;
             height: 60px;
-            fill: var(--primary-red);
+            fill: #E10600;
         }
         
         .thank-you-card h1 {
-            color: var(--primary-red);
+            color: #E10600;
             font-size: 2.5rem;
             margin-bottom: 1rem;
         }
         
         .thank-you-card h2 {
-            color: var(--text-dark);
+            color: #ffffff;
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
         
         .thank-you-card p {
-            color: var(--text-light);
+            color: #9ca3af;
             font-size: 1.1rem;
             line-height: 1.8;
             margin-bottom: 2rem;
         }
         
         .thank-you-info {
-            background-color: var(--gray-light);
-            border-radius: 8px;
+            background: rgba(10, 16, 32, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
             padding: 1.5rem;
             margin-bottom: 2rem;
             text-align: left;
@@ -74,10 +77,11 @@
         .thank-you-info p {
             margin: 0.5rem 0;
             font-size: 1rem;
+            color: #e5e7eb;
         }
         
         .thank-you-info strong {
-            color: var(--primary-red);
+            color: #E10600;
         }
         
         .thank-you-actions {
