@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="premium-layout">
     <header>
         <nav class="navbar" aria-label="Main navigation">
             <div class="container">
@@ -51,12 +51,21 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="nav-item mega-wrapper">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="mega-menu mega-menu--about">
+                            <div class="mega-grid mega-grid--single">
+                                <div class="mega-col">
+                                    <h4>Company</h4>
+                                    <a href="about.html">About Us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="contact.html" class="mega-cta red">Contact Us →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -66,104 +75,259 @@
     </header>
 
     <main id="main-content">
-        <section class="page-header" aria-labelledby="page-heading">
+        <!-- Hero -->
+        <section class="hero about-hero" aria-labelledby="page-heading">
             <div class="container">
-                <div class="section-label">About Us</div>
-                <h1 id="page-heading" class="section-title">About WRS</h1>
-                <p class="section-subtitle">Strategic workforce partner. Helping businesses and job seekers connect with the right opportunities.</p>
+                <div class="hero-content about-hero-content">
+                    <p class="about-hero-label">About WRS</p>
+                    <h1 id="page-heading" class="hero-title about-hero-title">
+                        Strategic Recruitment.<br>
+                        Structured Systems.<br>
+                        Stronger Teams.
+                    </h1>
+                    <div class="about-hero-underline" aria-hidden="true"></div>
+                    <p class="hero-subtitle about-hero-subtitle">Workforce Recruitment &amp; HR Solutions PH</p>
+                    <div class="about-hero-body">
+                        <p class="about-hero-intro">Hiring in the Philippines is competitive, fast-moving, and often reactive. At WRS (Workforce Recruitment &amp; HR Solutions PH), we help Philippine businesses hire smarter through structured recruitment systems designed to reduce hiring risks, improve retention, and align talent with long-term business goals.</p>
+                        <p class="about-hero-specialize">As a Philippines-based recruitment and HR consultancy, we specialize in:</p>
+                        <ul class="why-list about-hero-list">
+                            <li>Strategic Talent Acquisition</li>
+                            <li>End-to-End Recruitment Services</li>
+                            <li>HR Systems Optimization</li>
+                            <li>Workforce Planning &amp; Hiring Strategy</li>
+                        </ul>
+                        <p class="about-hero-tagline">We don't operate as a volume-driven recruitment agency.</p>
+                        <p class="about-hero-tagline">We function as a structured workforce partner, helping businesses build stable, performance-driven teams.</p>
+                        <p class="about-hero-tagline about-hero-tagline--last">We don't just send resumes. We build workforce solutions.</p>
+                        <p class="about-hero-cta">
+                            <a href="#" class="cta-button" data-open-modal="consultation">Schedule a Free Recruitment Strategy Call</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Who Manages WRS? Founder profile -->
-        <section class="about-section" aria-labelledby="founder-heading">
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Mission, Vision & Core Values – one section, 3 columns -->
+        <section class="about-section premium-section about-mission-vision-values" aria-labelledby="mission-vision-values-heading">
             <div class="container">
-                <div class="section-label">Who Manages WRS?</div>
-                <h2 id="founder-heading" class="section-title">Founder / Managing Director</h2>
-                <p class="section-subtitle">Professional background in HR &amp; Recruitment</p>
-                <div class="about-content">
+                <p class="about-section-label">Purpose</p>
+                <h2 id="mission-vision-values-heading" class="section-title">Mission, Vision &amp; Core Values</h2>
+                <div class="about-mvv-grid">
+                    <div class="about-mvv-col about-mvv-card" id="mission-heading">
+                        <span class="about-mvv-card-accent" aria-hidden="true"></span>
+                        <h3 class="about-mvv-title">Our Mission</h3>
+                        <p class="about-mvv-desc">To transform recruitment in the Philippines from a reactive task into a strategic business advantage.</p>
+                        <p class="about-mvv-label">We replace</p>
+                        <ul class="about-mvv-list">
+                            <li>Guesswork with systems</li>
+                            <li>Inefficiency with structure</li>
+                            <li>Uncertainty with measurable hiring processes</li>
+                        </ul>
+                    </div>
+                    <div class="about-mvv-col about-mvv-card" id="vision-heading">
+                        <span class="about-mvv-card-accent" aria-hidden="true"></span>
+                        <h3 class="about-mvv-title">Our Vision</h3>
+                        <p class="about-mvv-desc">To become a trusted Workforce Recruitment &amp; HR Solutions PH partner for organizations that value:</p>
+                        <ul class="about-mvv-list">
+                            <li>Quality hiring</li>
+                            <li>Cultural alignment</li>
+                            <li>Structured HR systems</li>
+                            <li>Long-term workforce stability</li>
+                        </ul>
+                        <p class="about-mvv-tagline">Not just headcount.</p>
+                    </div>
+                    <div class="about-mvv-col about-mvv-col--values about-mvv-card" id="values-heading">
+                        <span class="about-mvv-card-accent" aria-hidden="true"></span>
+                        <h3 class="about-mvv-title">Our Core Values</h3>
+                        <p class="about-mvv-desc">The principles that guide how we work with clients and candidates.</p>
+                        <ul class="about-mvv-values-list">
+                            <li><strong>Integrity.</strong> Transparent communication and ethical recruitment practices.</li>
+                            <li><strong>Excellence.</strong> Structured systems that produce measurable hiring outcomes.</li>
+                            <li><strong>Client Commitment.</strong> Every hiring engagement is treated as a growth investment.</li>
+                            <li><strong>Continuous Improvement.</strong> We continuously refine our framework to adapt to evolving workforce demands.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- What Makes WRS Different -->
+        <section class="about-section premium-section about-block" aria-labelledby="different-heading">
+            <div class="container">
+                <p class="about-section-label">Why WRS</p>
+                <h2 id="different-heading" class="section-title">What Makes WRS Different?</h2>
+                <p class="section-subtitle">Unlike traditional recruitment agencies in the Philippines that prioritize volume hiring, WRS focuses on strategy, structure, and alignment.</p>
+                <p style="margin-top: 1rem;">Our Workforce Recruitment &amp; HR Solutions PH model prioritizes:</p>
+                <ul class="why-list" style="margin-top: 0.5rem;">
+                    <li>Strategy before sourcing</li>
+                    <li>Standardized and structured screening</li>
+                    <li>Quality-first hiring decisions</li>
+                    <li>Professional candidate experience</li>
+                    <li>Long-term workforce alignment</li>
+                </ul>
+                <p class="center-muted" style="margin-top: 1rem;">We operate as a strategic extension of your HR function, not just a third-party recruiter.</p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Integrated Workforce Framework -->
+        <section class="about-section premium-section--alt about-block" aria-labelledby="framework-heading">
+            <div class="container">
+                <p class="about-section-label">How We Work</p>
+                <h2 id="framework-heading" class="section-title">Our Integrated Workforce Framework</h2>
+                <ul class="why-list" style="margin-top: 1rem;">
+                    <li><strong>Workforce &amp; HR Assessment</strong>. We analyze structure, processes, and hiring needs.</li>
+                    <li><strong>Strategic Planning</strong>. We define recruitment priorities and HR system improvements.</li>
+                    <li><strong>Talent Acquisition &amp; Screening</strong>. We source, evaluate, and endorse aligned candidates.</li>
+                    <li><strong>HR Process Support</strong>. We assist with onboarding clarity and workforce alignment.</li>
+                    <li><strong>Ongoing Workforce Advisory</strong>. We remain your strategic partner as you scale.</li>
+                </ul>
+                <p class="center-muted" style="margin-top: 1.5rem;">This is Workforce Recruitment &amp; HR Solutions PH, built for growth-stage businesses.</p>
+                <p class="center-muted" style="margin-top: 0.5rem;">Every hire is intentional. Every step is strategic.</p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Who Manages WRS - Founder -->
+        <section class="about-section premium-section--alt about-founder-section" aria-labelledby="founder-heading">
+            <div class="container">
+                <p class="about-section-label">Leadership</p>
+                <h2 id="founder-heading" class="section-title">Who Manages WRS?</h2>
+                <div class="about-founder-header">
+                    <p class="about-founder-role">Founder &amp; Managing Director</p>
+                    <p class="about-founder-role-sub">HR Officer &amp; Recruitment Specialist</p>
+                    <p class="about-founder-name">Rovic Deniel Labuguen Mejia</p>
+                    <div class="experience-badge">3+ Years of Professional HR &amp; Recruitment Experience</div>
+                </div>
+                <div class="about-content about-founder-content">
                     <div class="about-image">
                         <div class="image-container">
-                            <img src="Assets/Solo Business Pic.png" alt="Rovic Deniel Labuguen Mejia - HR Officer & Recruitment Specialist" class="profile-image">
+                            <img src="Assets/Solo Business Pic.png" alt="Rovic Deniel Labuguen Mejia - Founder, WRS" class="profile-image">
                         </div>
                     </div>
                     <div class="about-text">
-                        <div class="about-header">
-                            <h3>Rovic Deniel Labuguen Mejia</h3>
-                            <p class="job-title">HR Officer &amp; Recruitment Specialist</p>
-                            <div class="experience-badge">
-                                <span class="badge-icon">⭐</span>
-                                <span>3+ Years Experience</span>
-                            </div>
-                        </div>
-                        <div class="about-description">
-                            <p>Rovic Deniel Labuguen Mejia is a dynamic HR and creative professional with over 3+ years of combined experience in talent acquisition, employee engagement, compensation &amp; benefits, and HR operations.</p>
-                            <p>He has a proven track record of reducing hiring cycle time by 25%, strengthening employee engagement initiatives, and supporting business operations through data analysis, IT support, and process improvement.</p>
-                            <p>With hands-on experience in HR recruitment, payroll processing, HRIS (GreatDay), Monday.com and labor law awareness, combined with strong creative and technical skills; he bridges people management with innovative, results-driven solutions.</p>
-                        </div>
+                        <p>Rovic Deniel Labuguen Mejia is the Founder and Managing Director of WRS (Workforce Recruitment &amp; HR Solutions PH).</p>
+                        <p>With over three years of combined experience in human resources and recruitment, he brings a structured, performance-driven approach to talent acquisition, HR operations, and workforce systems development.</p>
+                        <p>He has a proven track record of reducing hiring cycle time by 25%, strengthening employee engagement initiatives, and supporting business operations through data analysis, IT support, and process improvement.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon divider-icon-about" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
 
-        <!-- The Story Behind WRS -->
-        <section class="about-story-section" aria-labelledby="story-heading">
+        <!-- Founder Story -->
+        <section class="about-story-section premium-section about-block" aria-labelledby="story-heading">
             <div class="container">
-                <div class="section-label">Our Story</div>
-                <h2 id="story-heading" class="section-title">The Story Behind WRS</h2>
-                <div class="about-story-content">
-                    <p>WRS was created to address a clear gap: many businesses struggle to find the right talent quickly and fairly, while job seekers often miss opportunities that match their skills. We saw a need for a partner that could connect both sides efficiently and ethically.</p>
-                    <p><strong>Our mission</strong> is to help businesses and job seekers alike, through tailored recruitment, transparent processes, and ongoing support. We focus on the gap in recruitment services where speed, quality, and trust matter most.</p>
-                </div>
-                <div class="about-purpose-vision">
-                    <div class="about-purpose-vision-card">
-                        <h3>Purpose</h3>
-                        <p>To connect talent with opportunity efficiently and ethically.</p>
-                    </div>
-                    <div class="about-purpose-vision-card">
-                        <h3>Vision</h3>
-                        <p>To become a trusted HR &amp; Recruitment Partner across industries.</p>
-                    </div>
-                </div>
+                <p class="about-section-label">Story</p>
+                <h2 id="story-heading" class="section-title">Founder Story: Why WRS Was Built</h2>
+                <p class="section-subtitle">WRS was founded on a critical observation:</p>
+                <p style="margin-top: 1rem;">Many businesses struggle not because they lack talent, but because they lack structured hiring systems.</p>
+                <p style="margin-top: 1rem;">Throughout his HR career, Rovic consistently encountered:</p>
+                <ul class="why-list" style="margin-top: 0.5rem;">
+                    <li>Companies rushing to fill roles without strategic workforce planning</li>
+                    <li>High turnover caused by poor alignment</li>
+                    <li>Recruitment handled reactively instead of systematically</li>
+                    <li>HR processes lacking measurable systems and accountability</li>
+                </ul>
+                <p class="center-muted" style="margin-top: 1rem;">He recognized that recruitment should not simply fill vacancies. It should strengthen organizations.</p>
+                <p style="margin-top: 1rem;">WRS was built to introduce structured Workforce Recruitment &amp; HR Solutions PH, enabling businesses to hire with confidence, clarity, and long-term vision.</p>
             </div>
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
 
-        <!-- The Team -->
-        <section class="about-team-section" aria-labelledby="team-heading">
+        <!-- Professional Expertise -->
+        <section class="about-section premium-section--alt about-block" aria-labelledby="expertise-heading">
             <div class="container">
-                <div class="section-label">The Team</div>
-                <h2 id="team-heading" class="section-title">The Team</h2>
-                <p class="section-subtitle">HR specialists, recruiters, and admin support working to deliver results.</p>
-                <div class="about-team-grid">
-                    <div class="about-team-card">
-                        <span class="about-team-icon" aria-hidden="true">👔</span>
-                        <h3>HR Specialists</h3>
-                        <p>Policy, compliance, performance, and organizational support.</p>
-                    </div>
-                    <div class="about-team-card">
-                        <span class="about-team-icon" aria-hidden="true">🔍</span>
-                        <h3>Recruiters</h3>
-                        <p>Sourcing, screening, and placing the right talent for your roles.</p>
-                    </div>
-                    <div class="about-team-card">
-                        <span class="about-team-icon" aria-hidden="true">📋</span>
-                        <h3>Admin Support</h3>
-                        <p>Coordination, documentation, and smooth operations.</p>
-                    </div>
-                </div>
-                <p style="text-align: center; margin-top: 2rem;">
-                    <a href="book-consultation.html" class="cta-button">Work With Our Team</a>
+                <p class="about-section-label">Expertise</p>
+                <h2 id="expertise-heading" class="section-title">Professional Expertise</h2>
+                <p>Rovic's professional background includes:</p>
+                <ul class="why-list" style="margin-top: 0.5rem;">
+                    <li>Talent Acquisition &amp; End-to-End Recruitment</li>
+                    <li>Employee Engagement Programs</li>
+                    <li>Compensation &amp; Benefits Administration</li>
+                    <li>HR Operations &amp; Process Improvement</li>
+                    <li>Payroll Processing</li>
+                    <li>Workflow Systems Implementation (Monday.com)</li>
+                    <li>Workforce Data Analysis</li>
+                    <li>Philippine Labor Law Awareness &amp; Compliance</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Proven Impact -->
+        <section class="about-section premium-section about-block" aria-labelledby="impact-heading">
+            <div class="container">
+                <p class="about-section-label">Results</p>
+                <h2 id="impact-heading" class="section-title">Proven Impact</h2>
+                <p>Throughout his HR career, Rovic has:</p>
+                <ul class="why-list" style="margin-top: 0.5rem;">
+                    <li>Reduced hiring cycle time by 25%</li>
+                    <li>Strengthened employee engagement initiatives</li>
+                    <li>Improved operational efficiency through structured systems</li>
+                    <li>Supported executive decision-making through workforce data analysis</li>
+                </ul>
+                <p class="center-muted" style="margin-top: 1rem;">By combining HR structure with systems thinking, WRS delivers practical, results-driven Workforce Recruitment &amp; HR Solutions PH.</p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Leadership Philosophy -->
+        <section class="about-section premium-section--alt about-block" aria-labelledby="philosophy-heading">
+            <div class="container">
+                <p class="about-section-label">Philosophy</p>
+                <h2 id="philosophy-heading" class="section-title">Leadership Philosophy</h2>
+                <p class="section-subtitle">Recruitment should not be transactional. It should be strategic.</p>
+                <p style="margin-top: 1rem;">Our Workforce Recruitment &amp; HR Solutions PH philosophy is built on:</p>
+                <ul class="why-list" style="margin-top: 0.5rem;">
+                    <li>Quality over volume</li>
+                    <li>Process over guesswork</li>
+                    <li>Alignment over urgency</li>
+                    <li>Long-term workforce stability over quick placements</li>
+                </ul>
+                <p class="center-muted" style="margin-top: 1rem;">This ensures WRS operates as a strategic hiring partner, not simply a recruitment provider.</p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Why Clients Trust WRS -->
+        <section class="about-section premium-section--alt about-block" aria-labelledby="trust-heading">
+            <div class="container">
+                <p class="about-section-label">Trust</p>
+                <h2 id="trust-heading" class="section-title">Why Clients Trust WRS</h2>
+                <ul class="why-list" style="margin-top: 0.5rem;">
+                    <li>Clear and transparent communication</li>
+                    <li>Structured recruitment methodology</li>
+                    <li>Professional candidate management</li>
+                    <li>Reliable turnaround timelines</li>
+                    <li>Long-term workforce alignment</li>
+                </ul>
+                <p class="center-muted" style="margin-top: 1rem;">We focus on sustainable workforce success, not short-term hiring wins.</p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Universal CTA -->
+        <section class="conversion-section premium-cta">
+            <div class="container">
+                <h2 class="section-title">Ready to Strengthen Your Workforce or Career?</h2>
+                <p class="section-subtitle">Book a free consultation or explore our solutions. We're here to help.</p>
+                <p class="about-cta-wrap">
+                    <a href="#" class="cta-button" data-open-modal="consultation">Book a Free Consultation</a>
+                    <a href="solutions/solutions.html" class="cta-button cta-button--outline-small">Explore Solutions</a>
+                    <a href="contact.html" class="cta-button cta-button--outline-small">Contact Us</a>
                 </p>
             </div>
         </section>

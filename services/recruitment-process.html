@@ -9,7 +9,7 @@
     <link rel="icon" href="../Assets/Logo.png" type="image/png" sizes="any">
     <link rel="apple-touch-icon" href="../Assets/Logo.png">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../styles-portal.css">
+    <link rel="stylesheet" href="../css/styles-portal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -52,11 +52,21 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="../pricing.html">Pricing</a></li>
-                    <li><a href="../about.html">About</a></li>
+                    <li class="nav-item mega-wrapper">
+                        <a href="../about.html" class="nav-link">About</a>
+                        <div class="mega-menu mega-menu--about">
+                            <div class="mega-grid mega-grid--single">
+                                <div class="mega-col">
+                                    <h4>Company</h4>
+                                    <a href="../about.html">About Us</a>
+                                    <a href="../faq.html">FAQ</a>
+                                    <a href="../blogs.html">Blogs</a>
+                                    <a href="../contact.html" class="mega-cta red">Contact Us →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="../jobs.html">Jobs</a></li>
-                    <li><a href="../faq.html">FAQ</a></li>
-                    <li><a href="../blogs.html">Blogs</a></li>
                 </ul>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -115,8 +125,8 @@
                     </div>
                 </div>
                 <p style="text-align: center; margin-top: 2.5rem;">
-                    <a href="../book-consultation.html" class="cta-button">Book a consultation</a>
-                    <a href="../book-consultation.html" class="cta-button cta-button--outline" style="margin-left: 1rem;">Contact for employer plans</a>
+                    <a href="#" class="cta-button" data-open-modal="consultation">Book a consultation</a>
+                    <a href="#" class="cta-button cta-button--outline" data-open-modal="consultation" style="margin-left: 1rem;">Contact for employer plans</a>
                 </p>
             </div>
         </section>

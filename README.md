@@ -1,6 +1,6 @@
 # Workforce Recruitment Solutions (WRS)
 
-**HR & Recruitment Solutions — information and hiring site.**
+**HR & Recruitment Solutions— information and hiring site.**
 
 © 2026 All Rights Reserved | EST. 2023
 

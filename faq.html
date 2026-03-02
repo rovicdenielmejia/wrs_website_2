@@ -49,12 +49,21 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="nav-item mega-wrapper">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="mega-menu mega-menu--about">
+                            <div class="mega-grid mega-grid--single">
+                                <div class="mega-col">
+                                    <h4>Company</h4>
+                                    <a href="about.html">About Us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="contact.html" class="mega-cta red">Contact Us →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -68,37 +77,193 @@
             <div class="container">
                 <div class="section-label">Support</div>
                 <h1 id="page-heading" class="section-title">Frequently Asked Questions</h1>
-                <p class="section-subtitle">Common questions about our recruitment and HR services.</p>
+                <p class="section-subtitle">Whether you're an employer or a job seeker, here are answers to the questions we get asked most often.</p>
             </div>
         </section>
 
-        <section class="services-section">
-            <div class="container" style="max-width: 800px;">
-                <div class="dashboard-card">
-                    <h3>For Employers</h3>
-                    <p><strong>How long does recruitment take?</strong> We aim for a faster turnaround; many clients see around 25% improvement compared to DIY hiring. Timeline depends on role and volume.</p>
-                    <p><strong>What industries do you serve?</strong> We serve BPO, corporate, healthcare, tech, retail, education, finance, and more, locally and internationally.</p>
-                    <p><strong>How do employers get charged?</strong> We offer transparent packages (e.g. per-hire or custom partnership). See our <a href="solutions/solutions.html">Solutions</a> page for pricing options, or <a href="book-consultation.html">request a proposal</a>.</p>
-                    <p><strong>How do I post a job?</strong> Contact us for a consultation. We can post roles for you and support your hiring end to end.</p>
-                </div>
-                <div class="dashboard-card">
-                    <h3>For Job Seekers</h3>
-                    <p><strong>Is there a placement fee for job seekers?</strong> No. Our recruitment services are free for job seekers.</p>
-                    <p><strong>How do I apply?</strong> Browse <a href="jobs.html">Jobs</a>, choose a role, and use the Apply Now button to submit your application and resume. You can also <a href="book-consultation.html">book a consultation</a> for resume and career support.</p>
-                    <p><strong>Do you offer overseas jobs?</strong> Yes. We list local and international roles, including remote and relocation opportunities.</p>
-                </div>
-                <div class="dashboard-card">
-                    <h3>General</h3>
-                    <p><strong>How can I contact WRS?</strong> Email <a href="mailto:rovicmejia.hrd@gmail.com">rovicmejia.hrd@gmail.com</a> or call <a href="tel:+639755636276">+63 975 563 6276</a>. You can also use our <a href="book-consultation.html">consultation form</a>.</p>
-                    <p><strong>Where is WRS based?</strong> We are Philippines-based and offer remote and nationwide recruitment support.</p>
-                </div>
-                <p style="text-align: center; margin-top: 2rem;">
-                    <strong>Still Have Questions? Contact Us</strong>
-                </p>
-                <p style="text-align: center; margin-top: 0.5rem;">
-                    <a href="book-consultation.html" class="cta-button">Contact Us</a>
-                </p>
+        <section class="faq-section premium-section" aria-labelledby="faq-heading">
+            <p class="faq-section-label section-label">Browse by topic</p>
+            <p id="faq-heading" class="faq-section-intro">Employers, Job Seekers, and General inquiries.</p>
+
+            <div class="faq-tabs" role="tablist" aria-label="FAQ categories">
+                <button type="button" class="tab-btn active" role="tab" aria-selected="true" aria-controls="employers" id="tab-employers" onclick="openTab(event, 'employers')">Employers</button>
+                <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="jobseekers" id="tab-jobseekers" onclick="openTab(event, 'jobseekers')">Job Seekers</button>
+                <button type="button" class="tab-btn" role="tab" aria-selected="false" aria-controls="general" id="tab-general" onclick="openTab(event, 'general')">General</button>
             </div>
+
+            <div id="employers" class="tab-content active" role="tabpanel" aria-labelledby="tab-employers">
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-employers-1" id="faq-btn-employers-1">What services does WRS provide?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-employers-1" class="faq-answer" role="region" aria-labelledby="faq-btn-employers-1" hidden>
+                        <div class="faq-answer-inner">
+                            <p>We offer workforce recruitment and HR support services, including:</p>
+                            <ul>
+                                <li>Strategic talent acquisition</li>
+                                <li>Volume &amp; project-based hiring</li>
+                                <li>Monthly recruitment partner support</li>
+                                <li>Executive search</li>
+                                <li>Workforce planning &amp; HR system guidance</li>
+                            </ul>
+                            <p><strong>We tailor each engagement to your business needs.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-employers-2" id="faq-btn-employers-2">How long does the recruitment process take?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-employers-2" class="faq-answer" role="region" aria-labelledby="faq-btn-employers-2" hidden>
+                        <div class="faq-answer-inner">
+                            <p>It depends on the role complexity and level:</p>
+                            <ul>
+                                <li><strong>Entry- and mid-level roles:</strong> 2–4 weeks</li>
+                                <li><strong>Specialist or leadership roles:</strong> 4–8+ weeks</li>
+                            </ul>
+                            <p>We keep you informed with regular progress updates.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-employers-3" id="faq-btn-employers-3">How do you screen candidates?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-employers-3" class="faq-answer" role="region" aria-labelledby="faq-btn-employers-3" hidden>
+                        <div class="faq-answer-inner">
+                            <p>We use structured screening, including:</p>
+                            <ul class="faq-list-check">
+                                <li>Resume evaluation</li>
+                                <li>Skills and experience assessment</li>
+                                <li>Behavioral interview</li>
+                                <li>Job-specific criteria alignment</li>
+                                <li>Reference checks (if requested)</li>
+                            </ul>
+                            <p>This improves match quality and reduces hiring risk.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-employers-4" id="faq-btn-employers-4">Do you guarantee placements?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-employers-4" class="faq-answer" role="region" aria-labelledby="faq-btn-employers-4" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Yes— we offer a replacement support period based on the engagement model you select (e.g., 30–60 days). If a candidate leaves within this period, we'll re-support you without additional fees (conditions apply).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-employers-5" id="faq-btn-employers-5">How do you charge for your services?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-employers-5" class="faq-answer" role="region" aria-labelledby="faq-btn-employers-5" hidden>
+                        <div class="faq-answer-inner">
+                            <p>We have flexible engagement options for SMEs:</p>
+                            <ul>
+                                <li><strong>Per-Hire Recruitment:</strong> ₱10,000–₱18,000 per hire</li>
+                                <li><strong>Growth Support (Monthly):</strong> ₱30,000–₱60,000/mo</li>
+                                <li><strong>Enterprise / Retainer:</strong> ₱60,000–₱120,000+/mo</li>
+                            </ul>
+                            <p><strong>Final pricing depends on role level, volume, and project scope.</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-employers-6" id="faq-btn-employers-6">Can I negotiate pricing for high-volume hiring?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-employers-6" class="faq-answer" role="region" aria-labelledby="faq-btn-employers-6" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Yes— we offer customized pricing for stores or teams hiring multiple roles at once. <a href="contact.html">Contact us</a> for a tailored proposal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-employers-7" id="faq-btn-employers-7">How do we start an engagement?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-employers-7" class="faq-answer" role="region" aria-labelledby="faq-btn-employers-7" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Just <a href="#" data-open-modal="consultation">book a consultation</a> or reach out via our <a href="contact.html">contact form</a>. We'll clarify your needs, share a proposal, and confirm scope before starting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="jobseekers" class="tab-content" role="tabpanel" aria-labelledby="tab-jobseekers">
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-jobseekers-1" id="faq-btn-jobseekers-1">Do you help job seekers find jobs?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-jobseekers-1" class="faq-answer" role="region" aria-labelledby="faq-btn-jobseekers-1" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Absolutely. Our Job Seeker Services include:</p>
+                            <ul>
+                                <li>Job matching</li>
+                                <li>Resume &amp; career support</li>
+                                <li>Interview coaching</li>
+                                <li>Remote job guidance</li>
+                            </ul>
+                            <p>All services are designed to help you secure the right opportunity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-jobseekers-2" id="faq-btn-jobseekers-2">How do you match candidates to jobs?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-jobseekers-2" class="faq-answer" role="region" aria-labelledby="faq-btn-jobseekers-2" hidden>
+                        <div class="faq-answer-inner">
+                            <p>We evaluate your experience, skills, and job preferences— then match you with roles aligned with your profile. We also support your interview preparation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-jobseekers-3" id="faq-btn-jobseekers-3">Can you help with my resume?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-jobseekers-3" class="faq-answer" role="region" aria-labelledby="faq-btn-jobseekers-3" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Yes— we provide resume support to help highlight your strengths and increase interview invitations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-jobseekers-4" id="faq-btn-jobseekers-4">Is there a fee for job seekers?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-jobseekers-4" class="faq-answer" role="region" aria-labelledby="faq-btn-jobseekers-4" hidden>
+                        <div class="faq-answer-inner">
+                            <p>No— connecting qualified candidates with employers is free for job seekers. Coaching and career support services may have optional engagement fees.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="general" class="tab-content" role="tabpanel" aria-labelledby="tab-general">
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-general-1" id="faq-btn-general-1">Do you work nationwide?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-general-1" class="faq-answer" role="region" aria-labelledby="faq-btn-general-1" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Yes— we support employers and job seekers across the Philippines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-general-2" id="faq-btn-general-2">How do I contact you for support?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-general-2" class="faq-answer" role="region" aria-labelledby="faq-btn-general-2" hidden>
+                        <div class="faq-answer-inner">
+                            <p>You can get in touch via:</p>
+                            <ul>
+                                <li>Contact form on the website</li>
+                                <li>Email or phone (if listed)</li>
+                                <li>Social media channels</li>
+                            </ul>
+                            <p>We aim to respond within 1–2 business days.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-general-3" id="faq-btn-general-3">Can you support remote/online hiring?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-general-3" class="faq-answer" role="region" aria-labelledby="faq-btn-general-3" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Yes— we match candidates with remote and work-from-home opportunities and support the hiring process end-to-end.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item" data-faq>
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-panel-general-4" id="faq-btn-general-4">Do you help with HR policy or onboarding support?<span class="faq-chevron" aria-hidden="true"></span></button>
+                    <div id="faq-panel-general-4" class="faq-answer" role="region" aria-labelledby="faq-btn-general-4" hidden>
+                        <div class="faq-answer-inner">
+                            <p>Yes— we provide advisory and consulting support to help improve onboarding processes, documentation, and basic HR systems for employers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="faq-cta-line">Still have questions?</p>
+            <p class="faq-cta-wrap">
+                <a href="#" class="cta-button" data-open-modal="consultation">Contact Us</a>
+            </p>
         </section>
     </main>
 
@@ -129,5 +294,55 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+                tabcontent[i].setAttribute("hidden", "");
+                var items = tabcontent[i].querySelectorAll(".faq-item");
+                for (var j = 0; j < items.length; j++) {
+                    items[j].classList.remove("expanded");
+                    var btn = items[j].querySelector(".faq-question");
+                    var panel = items[j].querySelector(".faq-answer");
+                    if (btn) btn.setAttribute("aria-expanded", "false");
+                    if (panel) panel.setAttribute("hidden", "");
+                }
+            }
+
+            tablinks = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+                tablinks[i].setAttribute("aria-selected", "false");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            document.getElementById(tabName).removeAttribute("hidden");
+            evt.currentTarget.classList.add("active");
+            evt.currentTarget.setAttribute("aria-selected", "true");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll(".faq-question").forEach(function(btn) {
+                btn.addEventListener("click", function() {
+                    var item = this.closest(".faq-item");
+                    var panel = document.getElementById(this.getAttribute("aria-controls"));
+                    var isExpanded = item.classList.contains("expanded");
+
+                    if (isExpanded) {
+                        item.classList.remove("expanded");
+                        this.setAttribute("aria-expanded", "false");
+                        if (panel) panel.setAttribute("hidden", "");
+                    } else {
+                        item.classList.add("expanded");
+                        this.setAttribute("aria-expanded", "true");
+                        if (panel) panel.removeAttribute("hidden");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

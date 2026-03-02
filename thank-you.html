@@ -109,6 +109,7 @@
     </style>
 </head>
 <body>
+    <main id="main-content">
     <div class="thank-you-container">
         <div class="thank-you-card">
             <div class="thank-you-icon">
@@ -125,12 +126,17 @@
                 <p><strong>Application Date:</strong> <span id="application-date"></span></p>
             </div>
             
-            <div class="thank-you-actions">
-                <a href="home.html" class="btn-primary">Back to Home</a>
-                <a href="jobs.html" class="btn-secondary">View More Positions</a>
+            <div class="thank-you-actions" id="thank-you-actions">
+                <a href="home.html" class="btn-primary" id="cta-primary">Back to Home</a>
+                <a href="jobs.html" class="btn-secondary" id="cta-secondary">View More Positions</a>
             </div>
         </div>
     </div>
+    </main>
+    
+    <a href="#main-content" class="back-to-top" aria-label="Back to top">
+        <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
     
     <!-- Footer -->
     <footer class="footer" style="margin-top: 0;">
@@ -165,10 +171,18 @@
             document.getElementById('thank-you-headline').textContent = 'Consultation request received';
             document.getElementById('thank-you-message').textContent = 'Our team will contact you within 24–48 hours to schedule your consultation.';
             document.getElementById('application-details').style.display = 'none';
+            document.getElementById('cta-primary').textContent = 'Back';
+            document.getElementById('cta-primary').href = '#';
+            document.getElementById('cta-primary').onclick = function() { history.back(); return false; };
+            document.getElementById('cta-secondary').style.display = 'none';
         } else if (type === 'contact') {
             document.getElementById('thank-you-headline').textContent = 'Message received';
             document.getElementById('thank-you-message').textContent = 'Thank you for getting in touch. We will respond as soon as possible.';
             document.getElementById('application-details').style.display = 'none';
+            document.getElementById('cta-primary').textContent = 'Back';
+            document.getElementById('cta-primary').href = '#';
+            document.getElementById('cta-primary').onclick = function() { history.back(); return false; };
+            document.getElementById('cta-secondary').style.display = 'none';
         } else {
             if (name) {
                 document.getElementById('thank-you-headline').textContent = 'Thank you, ' + decodeURIComponent(name) + '!';

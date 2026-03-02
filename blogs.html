@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Blog - Workforce Recruitment & HR Solutions PH. Hiring tips, HR insights, and career advice.">
-    <title>Blogs | Workforce Recruitment & HR Solutions PH</title>
+    <meta name="description" content="Blog — Workforce Recruitment & HR Solutions PH. Hiring tips, HR insights, and career advice.">
+    <title>Blog | Workforce Recruitment & HR Solutions PH</title>
     <link rel="icon" href="Assets/Logo.png" type="image/png" sizes="any">
     <link rel="apple-touch-icon" href="Assets/Logo.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/styles-portal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="premium-layout page-blogs">
     <header>
         <nav class="navbar" aria-label="Main navigation">
             <div class="container">
@@ -49,12 +51,21 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="nav-item mega-wrapper">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="mega-menu mega-menu--about">
+                            <div class="mega-grid mega-grid--single">
+                                <div class="mega-col">
+                                    <h4>Company</h4>
+                                    <a href="about.html">About Us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="contact.html" class="mega-cta red">Contact Us →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -64,78 +75,220 @@
     </header>
 
     <main id="main-content">
-        <section class="page-header" aria-labelledby="page-heading">
+        <section class="page-header blog-page-header" aria-labelledby="page-heading">
             <div class="container">
-                <div class="section-label">Insights</div>
-                <h1 id="page-heading" class="section-title">Blogs</h1>
+                <p class="section-label">Insights</p>
+                <h1 id="page-heading" class="section-title">Blog</h1>
+                <div class="blog-header-underline" aria-hidden="true"></div>
                 <p class="section-subtitle">Hiring tips, HR insights, and career advice from WRS.</p>
             </div>
         </section>
 
-        <section class="blog-section">
-            <div class="container">
-                <div class="blog-categories">
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <section class="blog-section premium-section" aria-labelledby="blog-heading">
+            <div class="container container--blog">
+                <p id="blog-heading" class="visually-hidden">Latest articles</p>
+                <nav class="blog-categories" aria-label="Blog topics">
                     <span class="blog-cat-label">Topics:</span>
                     <a href="#hiring-tips" class="blog-cat-pill">Hiring Tips</a>
                     <a href="#resume" class="blog-cat-pill">Resume Advice</a>
+                    <a href="#jobseekers" class="blog-cat-pill">Job Seekers Advice</a>
                     <a href="#compliance" class="blog-cat-pill">HR Compliance</a>
-                    <a href="#trends" class="blog-cat-pill">Workforce Trends</a>
                     <a href="#employer-branding" class="blog-cat-pill">Employer Branding</a>
-                </div>
-                <div class="blog-featured">
-                    <article class="blog-card blog-card--featured">
-                        <span class="blog-card-badge">Featured</span>
-                        <div class="blog-card-image-wrap">
-                            <div class="blog-card-image-placeholder">📄</div>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-category">Workforce Trends</span>
-                            <h2 class="blog-card-title">How to Hire Smarter in 2026</h2>
-                            <p class="blog-card-excerpt">Practical tips for employers to streamline recruitment, improve time-to-hire, and attract the right talent. From job design to interviews.</p>
-                            <a href="book-consultation.html" class="blog-card-link">Read More →</a>
-                        </div>
+                    <a href="#trends" class="blog-cat-pill">Workforce Trends</a>
+                </nav>
+
+                <div class="blog-listing">
+                    <article class="blog-card blog-card--featured" id="trends">
+                        <a href="blog/hire-smarter-2026.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap blog-card-image-wrap--featured">
+                                <div class="blog-card-image-placeholder">📄</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-badge">Featured</span>
+                                <span class="blog-card-category">Workforce Trends</span>
+                                <h2 class="blog-card-title">How to Hire Smarter in 2026</h2>
+                                <p class="blog-card-excerpt">Practical tips for employers to streamline recruitment, improve time-to-hire, and attract the right talent. From job design to interviews.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="trends-2">
+                        <a href="blog/remote-work-philippines.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">🌐</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Workforce Trends</span>
+                                <h3 class="blog-card-title">The Rise of Remote Work in the Philippines</h3>
+                                <p class="blog-card-excerpt">How remote and hybrid work are reshaping the Philippine workforce and what SMEs should prepare for.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="trends-3">
+                        <a href="blog/employee-retention-advantage.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">📊</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Workforce Trends</span>
+                                <h3 class="blog-card-title">Why Employee Retention Is the New Competitive Advantage</h3>
+                                <p class="blog-card-excerpt">Why stable teams and retention-focused strategies now matter more than constant recruitment.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="hiring-tips">
+                        <a href="blog/pre-screening-saves-time.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">📋</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Hiring Tips</span>
+                                <h3 class="blog-card-title">7 Hiring Mistakes SMEs Make, And How to Avoid Them</h3>
+                                <p class="blog-card-excerpt">Seven common hiring mistakes SMEs make, plus practical ways to hire more confidently and sustainably.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="hiring-tips-2">
+                        <a href="blog/hire-right-first-time.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">👥</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Hiring Tips</span>
+                                <h3 class="blog-card-title">How to Hire the Right Employee the First Time</h3>
+                                <p class="blog-card-excerpt">A step-by-step approach to defining fit, screening effectively, and making confident hiring decisions.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="resume">
+                        <a href="blog/resume-tips-job-seekers.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">✏️</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Resume Advice</span>
+                                <h3 class="blog-card-title">How to Write a Resume That Gets Interview Calls</h3>
+                                <p class="blog-card-excerpt">Resume writing tips that focus on achievements, clarity, and alignment with the role you want.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="resume-2">
+                        <a href="blog/hr-compliance-basics.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">📄</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Resume Advice</span>
+                                <h3 class="blog-card-title">Resume Mistakes That Are Costing You Job Opportunities</h3>
+                                <p class="blog-card-excerpt">Avoid the most common resume mistakes that quietly reduce your chances of getting interviews.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="jobseekers">
+                        <a href="blog/job-interview-confidence.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">💼</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Job Seekers Advice</span>
+                                <h3 class="blog-card-title">How to Prepare for a Job Interview with Confidence</h3>
+                                <p class="blog-card-excerpt">A practical guide to preparing for interviews so you can communicate clearly and confidently.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="jobseekers-2">
+                        <a href="blog/career-growth-young-professionals.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">🚀</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Job Seekers Advice</span>
+                                <h3 class="blog-card-title">Career Growth Tips for Young Professionals in the Philippines</h3>
+                                <p class="blog-card-excerpt">Structured, practical tips to help young professionals grow their careers intentionally.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="compliance">
+                        <a href="blog/hr-compliance-basics-sme.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">⚖️</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">HR Compliance</span>
+                                <h3 class="blog-card-title">HR Compliance Basics Every SME Should Know</h3>
+                                <p class="blog-card-excerpt">Key contracts, contributions, and policies every SME should have to stay compliant.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="compliance-2">
+                        <a href="blog/basic-hr-systems-sme.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">📂</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">HR Compliance</span>
+                                <h3 class="blog-card-title">Why SMEs Need Basic HR Systems, Even Without a Full HR Department</h3>
+                                <p class="blog-card-excerpt">Why structure matters and simple HR systems protect SMEs as they grow.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="employer-branding">
+                        <a href="blog/employer-branding-smes.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">🏷️</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Employer Branding</span>
+                                <h3 class="blog-card-title">Why Employer Branding Matters for SMEs</h3>
+                                <p class="blog-card-excerpt">How a clear employer brand helps SMEs attract, hire, and retain stronger talent.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" id="employer-branding-2">
+                        <a href="blog/employer-branding-salary-alt.html" class="blog-card-link-wrap">
+                            <div class="blog-card-image-wrap">
+                                <div class="blog-card-image-placeholder">💡</div>
+                            </div>
+                            <div class="blog-card-body">
+                                <span class="blog-card-category">Employer Branding</span>
+                                <h3 class="blog-card-title">How to Attract Better Candidates Without Increasing Salary Offers</h3>
+                                <p class="blog-card-excerpt">Practical ways SMEs can compete for talent through growth, clarity, and culture—not just pay.</p>
+                                <span class="blog-card-link">Read More →</span>
+                            </div>
+                        </a>
                     </article>
                 </div>
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <div class="blog-card-image-wrap">
-                            <div class="blog-card-image-placeholder">📋</div>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-category">Hiring Tips</span>
-                            <h3 class="blog-card-title">Pre-screening That Saves Time</h3>
-                            <p class="blog-card-excerpt">Structured screening steps to shortlist candidates faster without sacrificing quality.</p>
-                            <a href="book-consultation.html" class="blog-card-link">Read More →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-card-image-wrap">
-                            <div class="blog-card-image-placeholder">✏️</div>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-category">Resume Advice</span>
-                            <h3 class="blog-card-title">Resume Tips for Job Seekers</h3>
-                            <p class="blog-card-excerpt">How to present your experience and skills so employers take notice. Clear, direct advice.</p>
-                            <a href="book-consultation.html" class="blog-card-link">Read More →</a>
-                        </div>
-                    </article>
-                    <article class="blog-card">
-                        <div class="blog-card-image-wrap">
-                            <div class="blog-card-image-placeholder">⚖️</div>
-                        </div>
-                        <div class="blog-card-body">
-                            <span class="blog-card-category">HR Compliance</span>
-                            <h3 class="blog-card-title">HR Compliance Basics</h3>
-                            <p class="blog-card-excerpt">What employers need to know about documentation, contracts, and local labor requirements.</p>
-                            <a href="book-consultation.html" class="blog-card-link">Read More →</a>
-                        </div>
-                    </article>
-                </div>
-                <section class="blog-cta-section">
+                <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+                <section class="blog-cta-section premium-section">
                     <h2 class="section-title">Subscribe for HR Insights</h2>
                     <p class="section-subtitle">Get hiring tips, workforce trends, and recruitment advice in your inbox.</p>
-                    <p style="text-align: center; margin-top: 1rem;">
-                        <a href="book-consultation.html" class="cta-button">Subscribe / Contact Us</a>
+                    <p class="blog-cta-wrap">
+                        <a href="#" class="cta-button" data-open-modal="consultation">Subscribe / Contact Us</a>
                     </p>
                 </section>
             </div>

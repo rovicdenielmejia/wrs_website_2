@@ -413,7 +413,7 @@ a, button { -webkit-tap-highlight-color: rgba(30, 58, 95, 0.12); tap-highlight-c
     transform: translateY(-4px);
 }
 .job-image-container {
-    height: 160px;
+    aspect-ratio: 4 / 3;
     background: linear-gradient(135deg, var(--hr-blue) 0%, var(--hr-blue-dark) 100%);
     display: flex;
     align-items: center;
@@ -850,7 +850,7 @@ a, button { -webkit-tap-highlight-color: rgba(30, 58, 95, 0.12); tap-highlight-c
 #modal-job-details .job-details-content li { margin-bottom: 0.35rem; }
 .modal-job-image {
     width: 100%;
-    height: 180px;
+    aspect-ratio: 4 / 3;
     margin-bottom: 1.5rem;
     border-radius: 12px;
     overflow: hidden;

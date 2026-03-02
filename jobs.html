@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="premium-layout page-jobs">
     <header>
         <nav class="navbar" aria-label="Main navigation">
             <div class="container">
@@ -51,12 +51,21 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="nav-item mega-wrapper">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="mega-menu mega-menu--about">
+                            <div class="mega-grid mega-grid--single">
+                                <div class="mega-col">
+                                    <h4>Company</h4>
+                                    <a href="about.html">About Us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="contact.html" class="mega-cta red">Contact Us →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -66,15 +75,21 @@
     </header>
 
     <main id="main-content">
-        <section class="page-header" aria-labelledby="page-heading">
+        <!-- Hero -->
+        <section class="hero jobs-hero" aria-labelledby="page-heading">
             <div class="container">
-                <div class="section-label">Career Opportunities</div>
-                <h1 id="page-heading" class="section-title">Current Openings</h1>
-                <p class="section-subtitle">Join our team and make a difference. Explore opportunities below.</p>
+                <div class="hero-content jobs-hero-content">
+                    <p class="hero-badge jobs-hero-badge">Career Opportunities</p>
+                    <h1 id="page-heading" class="hero-title">Current Openings</h1>
+                    <div class="jobs-hero-underline" aria-hidden="true"></div>
+                    <p class="hero-subtitle">Join our team and make a difference. Explore opportunities below.</p>
+                </div>
             </div>
         </section>
 
-        <section class="jobs-section">
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <section class="jobs-section premium-section">
             <div class="container">
                 <div class="jobs-toolbar">
                     <div class="jobs-search-wrap">
@@ -89,11 +104,32 @@
                         <label for="jobs-filter-industry">Industry</label>
                         <select id="jobs-filter-industry" class="jobs-filter" aria-label="Filter by industry">
                             <option value="">All industries</option>
-                            <option value="Technology">Technology</option>
-                            <option value="Finance">Finance</option>
-                            <option value="Healthcare">Healthcare</option>
+                            <option value="Accounting">Accounting</option>
+                            <option value="Agriculture">Agriculture</option>
+                            <option value="Automotive">Automotive</option>
                             <option value="BPO">BPO</option>
+                            <option value="Construction">Construction</option>
+                            <option value="Consulting">Consulting</option>
                             <option value="Education">Education</option>
+                            <option value="Energy &amp; Utilities">Energy &amp; Utilities</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Government &amp; Public Sector">Government &amp; Public Sector</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Hotels">Hotels</option>
+                            <option value="Food &amp; Beverages">Food &amp; Beverages</option>
+                            <option value="HR &amp; Recruitment">HR &amp; Recruitment</option>
+                            <option value="Insurance">Insurance</option>
+                            <option value="Legal">Legal</option>
+                            <option value="Logistics &amp; Supply Chain">Logistics &amp; Supply Chain</option>
+                            <option value="Manufacturing">Manufacturing</option>
+                            <option value="Marketing &amp; Advertising">Marketing &amp; Advertising</option>
+                            <option value="Media &amp; Creative">Media &amp; Creative</option>
+                            <option value="NGO &amp; Non-profit">NGO &amp; Non-profit</option>
+                            <option value="Pharmaceutical">Pharmaceutical</option>
+                            <option value="Real Estate">Real Estate</option>
+                            <option value="Retail">Retail</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Telecommunications">Telecommunications</option>
                             <option value="Other">Other</option>
                         </select>
                         <label for="jobs-filter-type">Job type</label>
@@ -106,12 +142,21 @@
                         </select>
                     </div>
                 </div>
-                <div id="jobs-featured" class="jobs-featured" aria-label="Featured jobs">
-                    <!-- Featured job card injected by script when applicable -->
-                </div>
                 <div id="jobs-container" class="jobs-grid">
                     <!-- Jobs rendered by script.js -->
                 </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="conversion-section premium-cta">
+            <div class="container">
+                <h2 class="section-title">Can't Find the Right Fit?</h2>
+                <p class="section-subtitle">Book a free consultation or submit your resume. We'll match you to opportunities.</p>
+                <p class="about-cta-wrap" style="margin-top: 1.5rem;">
+                    <a href="#" class="cta-button" data-open-modal="consultation">Book a Free Consultation</a>
+                    <a href="#" class="cta-button cta-button--outline-small" data-open-modal="submit-resume">Submit Your Resume</a>
+                </p>
             </div>
         </section>
     </main>
@@ -152,10 +197,21 @@
     <div id="apply-modal" class="modal">
         <div class="modal-content modal-content--form">
             <button type="button" class="apply-modal-close modal-close" aria-label="Close modal">&times;</button>
-            <h2 class="apply-modal-title">Apply Now</h2>
+            <h2 id="apply-modal-title" class="apply-modal-title">Apply Now</h2>
             <p class="apply-modal-subtitle">Submit your application below. We're here to help you succeed.</p>
             <div class="google-form-embed">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-WzfBUsx75XbcRTkBwatSeyCm00qgxnaatv-Ah57K94LCdw/viewform?embedded=true" title="Application form - Workforce Recruitment & HR Solutions PH" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe id="apply-form-iframe" title="Job Application Form" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="submit-resume-modal" class="modal" aria-hidden="true">
+        <div class="modal-content modal-content--form">
+            <button type="button" class="modal-close" aria-label="Close modal">&times;</button>
+            <h2 class="apply-modal-title">Submit Your Resume</h2>
+            <p class="apply-modal-subtitle">Send your details and resume. We'll match you to opportunities and get in touch.</p>
+            <div class="google-form-embed">
+                <iframe id="submit-resume-iframe" title="Talent / Job Seeker Application" src="https://form.jotform.com/260543773465059" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
     </div>

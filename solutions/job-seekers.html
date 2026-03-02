@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="premium-layout page-job-seekers">
     <header>
         <nav class="navbar" aria-label="Main navigation">
             <div class="container">
@@ -35,6 +35,9 @@
                                     <h4>👔 Employers</h4>
                                     <a href="../why-us.html#recruitment-services">Talent Acquisition</a>
                                     <a href="../why-us.html#recruitment-services">Executive Search</a>
+                                    <a href="../why-us.html#recruitment-services">Contract Staffing</a>
+                                    <a href="../services/recruitment-process.html">Workforce Planning</a>
+                                    <a href="../why-us.html#hr-services">HR Consulting</a>
                                     <a href="employers.html" class="mega-cta red">Employers Page →</a>
                                 </div>
                                 <div class="mega-col">
@@ -49,12 +52,21 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="../pricing.html">Pricing</a></li>
-                    <li><a href="../about.html">About</a></li>
+                    <li class="nav-item mega-wrapper">
+                        <a href="../about.html" class="nav-link">About</a>
+                        <div class="mega-menu mega-menu--about">
+                            <div class="mega-grid mega-grid--single">
+                                <div class="mega-col">
+                                    <h4>Company</h4>
+                                    <a href="../about.html">About Us</a>
+                                    <a href="../faq.html">FAQ</a>
+                                    <a href="../blogs.html">Blogs</a>
+                                    <a href="../contact.html" class="mega-cta red">Contact Us →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="../jobs.html">Jobs</a></li>
-                    <li><a href="../faq.html">FAQ</a></li>
-                    <li><a href="../blogs.html">Blogs</a></li>
-                    <li><a href="../contact.html">Contact</a></li>
                 </ul>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -64,338 +76,242 @@
     </header>
 
     <main id="main-content">
-        <!-- 1. Hero -->
-        <section class="hero talent-hero" aria-labelledby="talent-hero-heading">
+        <!-- Hero -->
+        <section class="hero talent-hero solutions-hero job-seekers-hero" aria-labelledby="talent-hero-heading">
             <div class="container">
-                <div class="hero-content">
-                    <p class="hero-badge">For Job Seekers</p>
-                    <h1 id="talent-hero-heading" class="hero-title">Build Your Career with WRS</h1>
-                    <p class="hero-subtitle">Connecting you to the right opportunities, locally and globally.</p>
+                <div class="hero-content job-seekers-hero-content">
+                    <p class="hero-badge job-seekers-hero-badge">Job Seeker Solutions</p>
+                    <h1 id="talent-hero-heading" class="hero-title">Empowering Your Career.
+                    <br>From Application to Opportunity</h1>
+                    <div class="job-seekers-hero-underline" aria-hidden="true"></div>
+                    <p class="hero-subtitle">At Workforce Recruitment &amp; HR Solutions PH, we help professionals and job seekers find the right opportunities, improve employability, and advance with confidence.</p>
+                    <p class="job-seekers-hero-intro">Whether you're entering the workforce, transitioning careers, or seeking remote roles— we support you every step of the way.</p>
                     <div class="hero-cta-grid">
                         <div class="hero-cta-primary">
-                            <a href="../jobs.html" class="cta-button">Explore Careers</a>
-                            <a href="#application-form" class="cta-button cta-button--outline-small">Submit Resume</a>
+                            <a href="../jobs.html" class="cta-button">Explore Available Jobs</a>
+                            <a href="#" class="cta-button cta-button--outline-small" data-open-modal="consultation">Book a Career Consultation</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
 
-        <!-- 2. Job Matching -->
-        <section class="talent-section job-matching-section" aria-labelledby="job-matching-heading">
+        <!-- How We Help You -->
+        <section class="premium-section" aria-labelledby="how-we-help-heading">
             <div class="container">
-                <div class="section-label">Smart Matching</div>
-                <h2 id="job-matching-heading" class="section-title">Smart Job Matching</h2>
-                <p class="section-subtitle">We match your profile to employers, through a mix of structured criteria and expert review, so you see roles that fit your industry, location, skills, and experience.</p>
-                <div class="talent-features-grid">
-                    <div class="talent-feature-card">
-                        <span class="talent-feature-icon">🏭</span>
-                        <h3>Industry-based matching</h3>
-                        <p>Roles aligned to your sector and career goals.</p>
-                    </div>
-                    <div class="talent-feature-card">
-                        <span class="talent-feature-icon">📍</span>
-                        <h3>Location-based search</h3>
-                        <p>Local, remote, or international; filter by preference.</p>
-                    </div>
-                    <div class="talent-feature-card">
-                        <span class="talent-feature-icon">✓</span>
-                        <h3>Skill matching</h3>
-                        <p>Your skills matched to job requirements.</p>
-                    </div>
-                    <div class="talent-feature-card">
-                        <span class="talent-feature-icon">📊</span>
-                        <h3>Experience matching</h3>
-                        <p>Seniority and years of experience considered.</p>
-                    </div>
-                </div>
-                <p style="text-align: center; margin-top: 1.5rem;">
-                    <a href="../jobs.html" class="cta-button">Find Matching Jobs</a>
-                </p>
-            </div>
-        </section>
-
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
-
-        <!-- 3. Resume & Career Support -->
-        <section class="talent-section resume-support-section" aria-labelledby="resume-heading">
-            <div class="container">
-                <div class="section-label">Career Support</div>
-                <h2 id="resume-heading" class="section-title">Resume & Career Support</h2>
-                <p class="section-subtitle">Strengthen your profile and get clear next steps from our team.</p>
-                <div class="talent-cards-grid">
-                    <div class="talent-card">
-                        <span class="talent-card-icon">📄</span>
-                        <h3>Resume Review</h3>
-                        <p>Feedback on structure, clarity, and impact so your resume stands out.</p>
-                    </div>
-                    <div class="talent-card">
-                        <span class="talent-card-icon">✏️</span>
-                        <h3>CV Optimization</h3>
-                        <p>Tailored suggestions to align your CV with target roles.</p>
-                    </div>
-                    <div class="talent-card">
-                        <span class="talent-card-icon">💬</span>
-                        <h3>Career Counseling</h3>
-                        <p>One-on-one guidance on direction, gaps, and next moves.</p>
-                    </div>
-                    <div class="talent-card">
-                        <span class="talent-card-icon">📁</span>
-                        <h3>Portfolio Advice</h3>
-                        <p>How to present projects and work samples to employers.</p>
-                    </div>
-                </div>
-                <p style="text-align: center; margin-top: 1.5rem;">
-                    <a href="../book-consultation.html" class="cta-button">Upload Resume / Book Support</a>
-                </p>
-            </div>
-        </section>
-
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
-
-        <!-- 4. Interview Coaching -->
-        <section class="talent-section interview-coaching-section" aria-labelledby="coaching-heading">
-            <div class="container">
-                <div class="section-label">Prepare Well</div>
-                <h2 id="coaching-heading" class="section-title">Interview Coaching</h2>
-                <p class="section-subtitle">We help you prepare for interviews so you show your best self and understand what employers expect.</p>
+                <p class="section-label">Support</p>
+                <h2 id="how-we-help-heading" class="section-title">How We Help You</h2>
+                <p class="section-subtitle">We understand that job hunting can be overwhelming. You might struggle with:</p>
                 <ul class="why-list">
-                    <li><strong>Mock interviews</strong>: Practice in a realistic setting and get constructive feedback.</li>
-                    <li><strong>Question practice</strong>: Common and behavioral questions so you answer with confidence.</li>
-                    <li><strong>Confidence training</strong>: Body language, tone, and clear communication.</li>
-                    <li><strong>Employer expectations</strong>: What hiring managers look for and how to align your answers.</li>
+                    <li>Knowing where to look for the right fit</li>
+                    <li>Presenting your skills effectively</li>
+                    <li>Performing confidently in interviews</li>
+                    <li>Competing in a crowded talent market</li>
                 </ul>
-                <p style="text-align: center; margin-top: 1.5rem;">
-                    <a href="../book-consultation.html" class="cta-button">Book Coaching Session</a>
-                </p>
+                <p class="center-muted" style="margin-top: 1.25rem;">We give you tools, guidance, and personalized support to stand out.</p>
             </div>
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
 
-        <!-- 5. Remote Careers -->
-        <section class="talent-section remote-careers-section" aria-labelledby="remote-heading">
-            <div class="container">
-                <div class="section-label">Flexible Work</div>
-                <h2 id="remote-heading" class="section-title">Remote & Global Opportunities</h2>
-                <p class="section-subtitle">Access work-from-home, international, freelance, and hybrid roles through WRS.</p>
-                <div class="talent-content-block">
-                    <p>We connect you to <strong>work-from-home jobs</strong>, <strong>international employers</strong>, <strong>freelance roles</strong>, and <strong>hybrid positions</strong> so you can choose what fits your lifestyle and goals.</p>
+        <!-- Our Job Seeker Services -->
+        <section class="premium-section--alt" aria-labelledby="services-heading">
+            <div class="container talent-services-wrap">
+                <p class="section-label">Services</p>
+                <h2 id="services-heading" class="section-title">Our Job Seeker Services</h2>
+                <div class="talent-services-grid">
+                <div class="talent-service-block">
+                    <h3 class="talent-service-title">Job Matching &amp; Placement Support</h3>
+                    <p>We connect you with employers looking for real talent— from entry-to-supervisory roles, corporate functions, and remote positions.</p>
+                    <p><strong>Benefits:</strong></p>
+                    <ul class="why-list">
+                        <li>Personalized job matches</li>
+                        <li>Opportunities aligned with your skills</li>
+                        <li>Faster interview invitations</li>
+                    </ul>
+                    <p><em>Ideal for:</em> Job seekers serious about finding the right fit.</p>
+                    <p><a href="../jobs.html" class="cta-button cta-button--outline-small">Browse relevant job openings here</a></p>
                 </div>
-                <p style="text-align: center; margin-top: 1.5rem;">
-                    <a href="../jobs.html" class="cta-button">View Remote Jobs</a>
-                </p>
-            </div>
-        </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
-
-        <!-- 6. Skill Certification -->
-        <section class="talent-section skill-cert-section" aria-labelledby="skill-heading">
-            <div class="container">
-                <div class="section-label">Upskill</div>
-                <h2 id="skill-heading" class="section-title">Skill Certification & Training</h2>
-                <p class="section-subtitle">Partnered training and certification paths to boost your profile. Status: <span class="status-badge">Partnered Training</span></p>
-                <div class="talent-cards-grid talent-cards-grid--five">
-                    <div class="talent-card">
-                        <span class="talent-card-icon">💻</span>
-                        <h3>Digital Skills</h3>
-                    </div>
-                    <div class="talent-card">
-                        <span class="talent-card-icon">📋</span>
-                        <h3>Office Admin</h3>
-                    </div>
-                    <div class="talent-card">
-                        <span class="talent-card-icon">🎧</span>
-                        <h3>Customer Service</h3>
-                    </div>
-                    <div class="talent-card">
-                        <span class="talent-card-icon">🔧</span>
-                        <h3>Technical Support</h3>
-                    </div>
-                    <div class="talent-card">
-                        <span class="talent-card-icon">👔</span>
-                        <h3>HR Support</h3>
-                    </div>
+                <div class="talent-service-block">
+                    <h3 class="talent-service-title">Resume &amp; Career Support</h3>
+                    <p>A strong resume gets you noticed. We help you:</p>
+                    <ul class="why-list">
+                        <li>Organize your professional profile</li>
+                        <li>Optimize your resume for quick review</li>
+                        <li>Highlight key strengths that matter to employers</li>
+                    </ul>
+                    <p><strong>Result:</strong> Higher interview call ratios.</p>
+                    <p><a href="#" class="cta-button cta-button--outline-small" data-open-modal="jobseeker-support" data-service="resume">Get Resume Support</a></p>
                 </div>
-                <p style="text-align: center; margin-top: 1.5rem;">
-                    <a href="../book-consultation.html" class="cta-button cta-button--outline-small">Join Training Program</a>
-                </p>
-            </div>
-        </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+                <div class="talent-service-block">
+                    <h3 class="talent-service-title">Interview Coaching</h3>
+                    <p>Don't just prepare— perform confidently. Our coaching helps you:</p>
+                    <ul class="why-list">
+                        <li>Communicate effectively</li>
+                        <li>Handle challenging questions</li>
+                        <li>Present your value clearly</li>
+                        <li>Build confidence before every interview</li>
+                    </ul>
+                    <p><strong>Result:</strong> Better interview performance, more offers.</p>
+                    <p><a href="#" class="cta-button cta-button--outline-small" data-open-modal="jobseeker-support" data-service="coaching">Book Coaching Session</a></p>
+                </div>
 
-        <!-- 7. Career Process -->
-        <section class="process-section" aria-labelledby="career-process-heading">
-            <div class="container">
-                <div class="section-label">Your Journey</div>
-                <h2 id="career-process-heading" class="section-title">Career Process</h2>
-                <p class="section-subtitle">From registration to placement and growth.</p>
-                <div class="process-timeline">
-                    <div class="process-step">
-                        <span class="process-step-number" aria-hidden="true">1</span>
-                        <div class="process-step-content"><h3>Register</h3><p>Share your profile and preferences with us.</p></div>
-                    </div>
-                    <div class="process-step">
-                        <span class="process-step-number" aria-hidden="true">2</span>
-                        <div class="process-step-content"><h3>Submit Resume</h3><p>Upload your resume so we can match you to roles.</p></div>
-                    </div>
-                    <div class="process-step">
-                        <span class="process-step-number" aria-hidden="true">3</span>
-                        <div class="process-step-content"><h3>Job Matching</h3><p>We surface opportunities that fit your profile.</p></div>
-                    </div>
-                    <div class="process-step">
-                        <span class="process-step-number" aria-hidden="true">4</span>
-                        <div class="process-step-content"><h3>Interview</h3><p>Prepare with our support and attend employer interviews.</p></div>
-                    </div>
-                    <div class="process-step">
-                        <span class="process-step-number" aria-hidden="true">5</span>
-                        <div class="process-step-content"><h3>Placement</h3><p>Offer and onboarding support.</p></div>
-                    </div>
-                    <div class="process-step">
-                        <span class="process-step-number" aria-hidden="true">6</span>
-                        <div class="process-step-content"><h3>Career Growth</h3><p>Ongoing support and future opportunities.</p></div>
-                    </div>
+                <div class="talent-service-block">
+                    <h3 class="talent-service-title">Remote &amp; Flexible Career Guidance</h3>
+                    <p>Looking for remote work opportunities? We assist you with:</p>
+                    <ul class="why-list">
+                        <li>Remote job matching</li>
+                        <li>Skills and platform guidance</li>
+                        <li>Remote application best practices</li>
+                    </ul>
+                    <p><strong>Benefits:</strong> Access global jobs with confidence and clarity.</p>
+                    <p><a href="../jobs.html" class="cta-button cta-button--outline-small">View Remote Jobs</a></p>
+                </div>
+
                 </div>
             </div>
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
 
-        <!-- 8. Testimonials -->
-        <section class="testimonials-section" aria-labelledby="testimonials-heading">
+        <!-- What Job Seekers Say -->
+        <section class="feedbacks-section premium-section" aria-labelledby="testimonials-heading">
             <div class="container">
-                <div class="section-label">Success Stories</div>
+                <p class="section-label">Testimonials</p>
                 <h2 id="testimonials-heading" class="section-title">What Job Seekers Say</h2>
-                <p class="section-subtitle">Dynamic-ready layout for candidate testimonials.</p>
-                <div class="testimonials-grid">
+                <div class="feedbacks-grid home-testimonials">
                     <blockquote class="testimonial-card">
-                        <p>"WRS matched me with a role that fit my skills. The process was clear and the team was supportive."</p>
-                        <cite>Candidate Name (placeholder)<br>Job Title · Company</cite>
+                        <p class="testimonial-stars" aria-hidden="true">★★★★★</p>
+                        <p class="testimonial-quote">"Professional and Supportive"</p>
+                        <p>"The interview coaching and feedback helped me improve my confidence. I secured a better opportunity within weeks."</p>
+                        <cite>— Marketing Specialist</cite>
                     </blockquote>
                     <blockquote class="testimonial-card">
-                        <p>"Interview coaching helped me feel confident. I got the job and I'm grateful for the guidance."</p>
-                        <cite>Candidate Name (placeholder)<br>Job Title · Company</cite>
+                        <p class="testimonial-stars" aria-hidden="true">★★★★★</p>
+                        <p class="testimonial-quote">"Clear Communication Throughout the Process"</p>
+                        <p>"They helped me tailor my resume and prepare for interviews. I felt guided and informed every step of the way."</p>
+                        <cite>— Operations Supervisor</cite>
                     </blockquote>
                 </div>
             </div>
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
 
-        <!-- 9. Job Alerts / Newsletter -->
-        <section class="talent-section job-alerts-section" aria-labelledby="alerts-heading">
+        <!-- Why Job Seekers Choose WRS -->
+        <section class="premium-section--alt" aria-labelledby="why-choose-heading">
             <div class="container">
-                <div class="section-label">Stay Updated</div>
-                <h2 id="alerts-heading" class="section-title">Get Notified for New Jobs</h2>
-                <p class="section-subtitle">Subscribe to receive job alerts that match your preferences.</p>
-                <form id="job-alerts-form" class="talent-form talent-form--inline">
-                    <div class="talent-form-row">
-                        <div class="form-group">
-                            <label for="alerts-email">Email *</label>
-                            <input type="email" id="alerts-email" name="email" required placeholder="you@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="alerts-preference">Job Preference</label>
-                            <select id="alerts-preference" name="job_preference">
-                                <option value="">Any</option>
-                                <option value="remote">Remote</option>
-                                <option value="onsite">On-site</option>
-                                <option value="hybrid">Hybrid</option>
-                                <option value="international">International</option>
-                            </select>
-                        </div>
-                    </div>
-                    <button type="submit" class="cta-button">Subscribe</button>
-                </form>
+                <p class="section-label">Why WRS</p>
+                <h2 id="why-choose-heading" class="section-title">Why Job Seekers Choose WRS</h2>
+                <ul class="why-list">
+                    <li>Personalized job matching</li>
+                    <li>Support from application to placement</li>
+                    <li>Practical resume &amp; interview coaching</li>
+                    <li>Guidance for remote careers</li>
+                    <li>Increased confidence and better job outcomes</li>
+                </ul>
+                <p class="center-muted" style="margin-top: 1.25rem;">We don't just help you apply— we help you succeed.</p>
             </div>
         </section>
 
-        <div class="section-divider" aria-hidden="true">
-            <div class="divider-line"></div>
-            <div class="divider-icon" aria-hidden="true"></div>
-            <div class="divider-line"></div>
-        </div>
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
 
-        <!-- 10. Application Form -->
+        <!-- Your Journey: Career Process -->
+        <section class="process-section process-section--premium premium-section" aria-labelledby="career-process-heading">
+            <div class="container">
+                <p class="process-section-label">Your Journey</p>
+                <div class="process-section-underline" aria-hidden="true"></div>
+                <h2 id="career-process-heading" class="process-section-title">Career Process</h2>
+                <p class="process-section-subtitle">From registration to placement and growth.</p>
+                <ul class="process-steps-list">
+                    <li class="process-step-item">
+                        <span class="process-step-num" aria-hidden="true">1</span>
+                        <div class="process-step-body">
+                            <span class="process-step-title">Register</span>
+                            <span class="process-step-desc">Share your profile and preferences with us.</span>
+                        </div>
+                    </li>
+                    <li class="process-step-item">
+                        <span class="process-step-num" aria-hidden="true">2</span>
+                        <div class="process-step-body">
+                            <span class="process-step-title">Submit Resume</span>
+                            <span class="process-step-desc">Upload your resume so we can match you to roles.</span>
+                        </div>
+                    </li>
+                    <li class="process-step-item">
+                        <span class="process-step-num" aria-hidden="true">3</span>
+                        <div class="process-step-body">
+                            <span class="process-step-title">Job Matching</span>
+                            <span class="process-step-desc">We surface opportunities that fit your profile.</span>
+                        </div>
+                    </li>
+                    <li class="process-step-item">
+                        <span class="process-step-num" aria-hidden="true">4</span>
+                        <div class="process-step-body">
+                            <span class="process-step-title">Interview</span>
+                            <span class="process-step-desc">Prepare with our support and attend employer interviews.</span>
+                        </div>
+                    </li>
+                    <li class="process-step-item">
+                        <span class="process-step-num" aria-hidden="true">5</span>
+                        <div class="process-step-body">
+                            <span class="process-step-title">Placement</span>
+                            <span class="process-step-desc">Offer and onboarding support.</span>
+                        </div>
+                    </li>
+                    <li class="process-step-item">
+                        <span class="process-step-num" aria-hidden="true">6</span>
+                        <div class="process-step-body">
+                            <span class="process-step-title">Career Growth</span>
+                            <span class="process-step-desc">Ongoing support and future opportunities.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Ready to Level Up -->
+        <section class="conversion-section premium-cta" aria-labelledby="ready-heading">
+            <div class="container">
+                <h2 id="ready-heading" class="section-title">Ready to Level Up Your Career?</h2>
+                <p class="section-subtitle">Your next opportunity starts here.</p>
+                <p class="about-cta-wrap" style="margin-top: 1.5rem;">
+                    <a href="../jobs.html" class="cta-button">Explore Current Job Openings</a>
+                    <a href="#" class="cta-button cta-button--outline-small" data-open-modal="consultation">Book a Career Coaching Session</a>
+                    <a href="#application-form" class="cta-button cta-button--outline-small">Submit Your Resume for Personalized Support</a>
+                </p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <!-- Application Form -->
         <section id="application-form" class="talent-section application-form-section" aria-labelledby="apply-heading">
             <div class="container">
                 <div class="section-label">Apply</div>
-                <h2 id="apply-heading" class="section-title">Submit Your Application</h2>
+                <h2 id="apply-heading" class="section-title">Join our Talent Network</h2>
                 <p class="section-subtitle">Send your details and resume. We'll match you to opportunities and get in touch.</p>
-                <form id="talent-application-form" class="talent-form">
-                    <div class="talent-form-grid">
-                        <div class="form-group">
-                            <label for="apply-name">Full Name *</label>
-                            <input type="text" id="apply-name" name="full_name" required placeholder="Your full name">
-                        </div>
-                        <div class="form-group">
-                            <label for="apply-email">Email *</label>
-                            <input type="email" id="apply-email" name="email" required placeholder="you@email.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="apply-phone">Phone *</label>
-                            <input type="tel" id="apply-phone" name="phone" required placeholder="+63 9XX XXX XXXX">
-                        </div>
-                        <div class="form-group">
-                            <label for="apply-preferred">Preferred Job</label>
-                            <input type="text" id="apply-preferred" name="preferred_job" placeholder="Role or industry">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="apply-resume">Resume Upload *</label>
-                        <input type="file" id="apply-resume" name="resume" accept=".pdf,.doc,.docx" required>
-                        <span class="file-name" id="apply-resume-name"></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="apply-portfolio">Portfolio (Optional)</label>
-                        <input type="url" id="apply-portfolio" name="portfolio" placeholder="https://...">
-                    </div>
-                    <div class="form-group">
-                        <label for="apply-experience">Experience</label>
-                        <textarea id="apply-experience" name="experience" rows="3" placeholder="Brief summary of your experience..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="apply-message">Message</label>
-                        <textarea id="apply-message" name="message" rows="3" placeholder="Anything else you'd like us to know..."></textarea>
-                    </div>
-                    <button type="submit" class="cta-button" style="width: 100%;">Apply Now</button>
-                </form>
+                <!-- Submit Your Resume: JotForm https://form.jotform.com/260543773465059 (Talent / Job Seeker Application) -->
+                <div class="talent-network-form-embed">
+                    <iframe
+                        id="JotFormIFrame-260543773465059"
+                        title="Talent / Job Seeker Application"
+                        onload="window.parent.scrollTo(0,0)"
+                        allowtransparency="true"
+                        allow="geolocation; microphone; camera; fullscreen; payment"
+                        src="https://form.jotform.com/260543773465059"
+                        frameborder="0"
+                        style="min-width:100%;max-width:100%;height:539px;border:none;"
+                        scrolling="no"
+                    >
+                    </iframe>
+                </div>
             </div>
         </section>
 
@@ -405,17 +321,6 @@
             <div class="divider-line"></div>
         </div>
 
-        <!-- 11. Universal CTA -->
-        <section class="conversion-section">
-            <div class="container">
-                <h2 class="section-title">Start Your Career with WRS Today</h2>
-                <p class="section-subtitle">Explore jobs, submit your profile, and take the next step with support from our team.</p>
-                <p style="text-align: center; margin-top: 1.5rem;">
-                    <a href="#application-form" class="cta-button">Apply Now</a>
-                    <a href="../jobs.html" class="cta-button cta-button--outline-small" style="margin-left: 0.75rem;">Browse Jobs</a>
-                </p>
-            </div>
-        </section>
     </main>
 
     <a href="#main-content" class="back-to-top" aria-label="Back to top">
@@ -427,7 +332,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <p>&copy; 2026 Workforce Recruitment & HR Solutions PH. All Rights Reserved.</p>
-                    <p>EST. 2023 | Connecting talent to the right opportunities, locally and globally.</p>
+                    <p>EST. 2023 | Empowering careers. Connecting talent. Driving success.</p>
                     <p>
                         <a href="../jobs.html" class="footer-link">Careers</a> ·
                         <a href="job-seekers.html" class="footer-link">Job Seekers</a> ·
@@ -451,9 +356,118 @@
         </div>
     </footer>
 
+    <!-- Job Seeker Support Modal (Resume Support / Coaching Session) -->
+    <div id="jobseeker-support-modal" class="modal" aria-hidden="true" aria-labelledby="jobseeker-support-modal-title">
+        <div class="modal-content modal-content--consultation modal-content--jobseeker-support">
+            <button type="button" class="modal-close jobseeker-support-modal-close" aria-label="Close modal">&times;</button>
+            <h2 id="jobseeker-support-modal-title" class="consultation-modal-title">Get Resume Support</h2>
+            <p class="consultation-modal-subtitle">Share your details and we’ll get back to you shortly.</p>
+            <form id="jobseeker-support-form" class="consultation-form consultation-form--modal" data-formspree-id="mbdavdzr">
+                <input type="hidden" name="_subject" id="jobseeker-support-subject" value="Job seeker support request">
+                <input type="hidden" name="service" id="jobseeker-support-service" value="Resume Support">
+                <div class="form-group">
+                    <label for="jobseeker-name">Full Name *</label>
+                    <input type="text" id="jobseeker-name" name="name" required placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="jobseeker-email">Email *</label>
+                    <input type="email" id="jobseeker-email" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="jobseeker-phone">Phone</label>
+                    <input type="tel" id="jobseeker-phone" name="phone" placeholder="+63 9XX XXX XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="jobseeker-message">Message</label>
+                    <textarea id="jobseeker-message" name="message" rows="3" placeholder="What do you need help with? (e.g. resume review, interview prep...)"></textarea>
+                </div>
+                <p id="jobseeker-support-status" class="consultation-modal-status" aria-live="polite"></p>
+                <button type="submit" class="cta-button" id="jobseeker-support-submit-btn" style="width: 100%;">Submit Request</button>
+            </form>
+            <p class="consultation-modal-footer">Prefer email? <a href="mailto:wrs.recruitment.hr@gmail.com">Contact us directly</a>.</p>
+        </div>
+    </div>
+
     <script src="../js/script.js"></script>
     <script>
         (function() {
+            // Job Seeker Support Modal (Resume Support / Coaching Session)
+            var modal = document.getElementById('jobseeker-support-modal');
+            var form = document.getElementById('jobseeker-support-form');
+            var titleEl = document.getElementById('jobseeker-support-modal-title');
+            var serviceInput = document.getElementById('jobseeker-support-service');
+            var subjectInput = document.getElementById('jobseeker-support-subject');
+
+            function openJobseekerSupportModal(service) {
+                if (!modal) return;
+                var isResume = (service || '').toLowerCase() === 'resume';
+                var title = isResume ? 'Get Resume Support' : 'Book a Coaching Session';
+                var serviceValue = isResume ? 'Resume Support' : 'Coaching Session';
+                if (titleEl) titleEl.textContent = title;
+                if (serviceInput) serviceInput.value = serviceValue;
+                if (subjectInput) subjectInput.value = serviceValue + ' request';
+                modal.style.display = 'block';
+                modal.setAttribute('aria-hidden', 'false');
+                var statusEl = document.getElementById('jobseeker-support-status');
+                if (statusEl) { statusEl.textContent = ''; statusEl.className = 'consultation-modal-status'; }
+            }
+
+            function closeJobseekerSupportModal() {
+                if (modal) {
+                    modal.style.display = 'none';
+                    modal.setAttribute('aria-hidden', 'true');
+                }
+            }
+
+            document.addEventListener('click', function(e) {
+                var openBtn = e.target.closest && e.target.closest('a[data-open-modal="jobseeker-support"]');
+                if (openBtn) {
+                    e.preventDefault();
+                    openJobseekerSupportModal(openBtn.getAttribute('data-service'));
+                }
+                if (e.target.classList && e.target.classList.contains('jobseeker-support-modal-close')) closeJobseekerSupportModal();
+                if (modal && e.target === modal) closeJobseekerSupportModal();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal && modal.style.display === 'block') closeJobseekerSupportModal();
+            });
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    var formId = form.getAttribute('data-formspree-id');
+                    var statusEl = document.getElementById('jobseeker-support-status');
+                    var submitBtn = document.getElementById('jobseeker-support-submit-btn');
+                    var nameVal = document.getElementById('jobseeker-name') && document.getElementById('jobseeker-name').value;
+                    if (subjectInput && nameVal) subjectInput.value = subjectInput.value + ' from ' + nameVal;
+                    var formData = new FormData(form);
+                    if (submitBtn) submitBtn.disabled = true;
+                    if (statusEl) { statusEl.textContent = 'Sending…'; statusEl.className = 'consultation-modal-status'; }
+                    fetch('https://formspree.io/f/' + formId, {
+                        method: 'POST',
+                        body: formData,
+                        headers: { 'Accept': 'application/json' }
+                    })
+                    .then(function(response) {
+                        if (response.ok) {
+                            if (statusEl) { statusEl.textContent = "Thank you. We'll be in touch soon."; statusEl.className = 'consultation-modal-status success'; }
+                            form.reset();
+                            setTimeout(function() {
+                                closeJobseekerSupportModal();
+                                window.location.href = '../thank-you.html?type=consultation';
+                            }, 800);
+                        } else {
+                            return response.json().then(function(data) { throw data; });
+                        }
+                    })
+                    .catch(function(err) {
+                        if (statusEl) { statusEl.textContent = err.error || 'Something went wrong. Please try again or contact us directly.'; statusEl.className = 'consultation-modal-status error'; }
+                        if (submitBtn) submitBtn.disabled = false;
+                    });
+                });
+            }
+
             var alertsForm = document.getElementById('job-alerts-form');
             if (alertsForm) {
                 alertsForm.addEventListener('submit', function(e) {
@@ -472,39 +486,9 @@
                 });
             }
 
-            var applyForm = document.getElementById('talent-application-form');
-            if (applyForm) {
-                applyForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    var resumeInput = document.getElementById('apply-resume');
-                    var resumeFile = resumeInput && resumeInput.files[0];
-                    var data = {
-                        full_name: document.getElementById('apply-name').value,
-                        email: document.getElementById('apply-email').value,
-                        phone: document.getElementById('apply-phone').value,
-                        preferred_job: document.getElementById('apply-preferred').value,
-                        portfolio: document.getElementById('apply-portfolio').value,
-                        experience: document.getElementById('apply-experience').value,
-                        message: document.getElementById('apply-message').value,
-                        resume_file_name: resumeFile ? resumeFile.name : '',
-                        source: 'job_seekers_page',
-                        date: new Date().toISOString()
-                    };
-                    var stored = JSON.parse(localStorage.getItem('wrs_talent_applications') || '[]');
-                    stored.push(data);
-                    localStorage.setItem('wrs_talent_applications', JSON.stringify(stored));
-                    window.location.href = '../thank-you.html?type=consultation';
-                });
-            }
-
-            var resumeInput = document.getElementById('apply-resume');
-            var resumeNameEl = document.getElementById('apply-resume-name');
-            if (resumeInput && resumeNameEl) {
-                resumeInput.addEventListener('change', function() {
-                    resumeNameEl.textContent = this.files.length ? 'Selected: ' + this.files[0].name : '';
-                });
-            }
         })();
     </script>
+    <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+    <script>window.jotformEmbedHandler("iframe[id='JotFormIFrame-260543773465059']", "https://form.jotform.com/");</script>
 </body>
 </html>

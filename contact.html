@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Contact Workforce Recruitment & HR Solutions PH. Inquiry form, email, phone, business location. Start the conversation today.">
-    <title>Contact Us | Workforce Recruitment & HR Solutions PH</title>
+    <meta name="description" content="Get in touch with Workforce Recruitment & HR Solutions PH for recruitment support, HR advisory, job matching, and career guidance. Contact us via email, phone, or our contact form.">
+    <title>Contact | Workforce Recruitment & HR Solutions PH</title>
     <link rel="icon" href="Assets/Logo.png" type="image/png" sizes="any">
     <link rel="apple-touch-icon" href="Assets/Logo.png">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="premium-layout page-contact">
     <header>
         <nav class="navbar" aria-label="Main navigation">
             <div class="container">
@@ -51,11 +51,21 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li class="nav-item mega-wrapper">
+                        <a href="about.html" class="nav-link">About</a>
+                        <div class="mega-menu mega-menu--about">
+                            <div class="mega-grid mega-grid--single">
+                                <div class="mega-col">
+                                    <h4>Company</h4>
+                                    <a href="about.html">About Us</a>
+                                    <a href="faq.html">FAQ</a>
+                                    <a href="blogs.html">Blogs</a>
+                                    <a href="contact.html" class="mega-cta red">Contact Us →</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="jobs.html">Jobs</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="blogs.html">Blogs</a></li>
                 </ul>
                 <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                     <span></span><span></span><span></span>
@@ -69,15 +79,59 @@
             <div class="container">
                 <div class="section-label">Get in Touch</div>
                 <h1 id="page-heading" class="section-title">Contact Us</h1>
-                <p class="section-subtitle">Inquiry form, email, phone, and location. Start the conversation today.</p>
+                <p class="section-subtitle">Workforce Recruitment &amp; HR Solutions PH</p>
             </div>
         </section>
 
-        <section class="contact-page-section">
-            <div class="container contact-page-grid">
-                <div class="contact-page-form-wrap">
-                    <h2>Inquiry Form</h2>
-                    <form id="contact-form" class="consultation-form">
+        <section class="contact-page-section contact-get-in-touch premium-section">
+            <div class="container contact-page-grid contact-page-grid--form-beside">
+                <div class="contact-page-details contact-get-in-touch-block">
+                    <h2 class="contact-block-title">Get In Touch</h2>
+                    <div class="contact-detail-group">
+                        <p class="contact-detail-label">Email</p>
+                        <p class="contact-detail-item">
+                            <a href="mailto:wrs.workforce.hr@gmail.com">wrs.workforce.hr@gmail.com</a><br>
+                            <a href="mailto:wrs.recruitment.hr@gmail.com">wrs.recruitment.hr@gmail.com</a>
+                        </p>
+                        <small class="contact-detail-note">Preferred for formal inquiries &amp; documentation</small>
+                    </div>
+                    <div class="contact-detail-group">
+                        <p class="contact-detail-label">Phone / SMS / Viber / WhatsApp</p>
+                        <p class="contact-detail-item">
+                            <a href="tel:+639271234567">+63 927 123 4567</a>
+                        </p>
+                        <small class="contact-detail-note">Quick support &amp; fast responses</small>
+                    </div>
+                    <div class="contact-detail-group">
+                        <p class="contact-detail-label">Follow us</p>
+                        <p class="contact-detail-item contact-social-item">
+                            <a href="https://www.facebook.com/wrs.soulutions.hr" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <span class="contact-detail-sep">·</span>
+                            <a href="https://www.instagram.com/wrs.soulutions.hr" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </p>
+                    </div>
+                    <div class="contact-detail-group">
+                        <p class="contact-detail-label">Business Hours</p>
+                        <p class="contact-detail-item">
+                            Monday – Friday: 8:00 AM – 6:00 PM (PHT)<br>
+                            Saturday – Sunday: By Appointment Only
+                        </p>
+                    </div>
+                    <div class="contact-detail-group">
+                        <p class="contact-detail-label">Office Location</p>
+                        <p class="contact-detail-item">
+                            Workforce Recruitment &amp; HR Solutions PH<br>
+                            Echague, Isabela, Philippines 3309
+                        </p>
+                        <small class="contact-detail-note">Remote / flexible setup · Meet by appointment</small>
+                    </div>
+                </div>
+                <div class="contact-form-card">
+                    <h2 id="contact-form-heading" class="contact-block-title">Contact Form</h2>
+                    <p class="contact-form-intro">Inquiries are sent automatically to wrs.recruitment.hr@gmail.com. Fill out the form and click Send Message.</p>
+                    <!-- Formspree form: https://formspree.io/f/xqedvebq → submissions to wrs.recruitment.hr@gmail.com -->
+                    <form id="contact-form" class="consultation-form" data-formspree-id="xqedvebq" action="#" method="POST">
+                        <input type="hidden" name="_subject" id="contact-hidden-subject" value="Contact inquiry">
                         <div class="form-group">
                             <label for="contact-name">Full Name *</label>
                             <input type="text" id="contact-name" name="name" required placeholder="Your name">
@@ -102,38 +156,30 @@
                             <label for="contact-message">Message *</label>
                             <textarea id="contact-message" name="message" rows="4" required placeholder="How can we help?"></textarea>
                         </div>
-                        <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+                        <p id="contact-form-status" class="contact-form-status" aria-live="polite"></p>
+                        <button type="submit" class="cta-button" id="contact-submit-btn" style="width: 100%;">Send Message</button>
                     </form>
                 </div>
-                <div class="contact-page-details">
-                    <h2>Contact Details</h2>
-                    <p class="contact-detail-item">
-                        <strong>Email</strong><br>
-                        <a href="mailto:rovicmejia.hrd@gmail.com">rovicmejia.hrd@gmail.com</a>
-                    </p>
-                    <p class="contact-detail-item">
-                        <strong>Phone</strong><br>
-                        <a href="tel:+639755636276">+63 975 563 6276</a>
-                    </p>
-                    <p class="contact-detail-item">
-                        <strong>Business location</strong><br>
-                        Philippines (remote & nationwide support)
-                    </p>
-                    <p class="contact-detail-item">
-                        <strong>Social media</strong><br>
-                        <span class="contact-social-links">
-                            <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                            <a href="#" aria-label="Facebook">Facebook</a>
-                        </span>
-                        <small>Add your profile URLs when ready.</small>
-                    </p>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"><div class="divider-line"></div><div class="divider-icon" aria-hidden="true"></div><div class="divider-line"></div></div>
+
+        <section class="contact-page-section contact-expect-section premium-section">
+            <div class="container">
+                <div class="contact-expect-card">
+                <h2 class="contact-block-title">What to Expect After You Contact Us</h2>
+                <p>Once you send a message:</p>
+                <ul class="contact-help-list">
+                    <li>We'll respond within 1–2 business days</li>
+                    <li>We'll clarify your needs before any commitment</li>
+                    <li>We'll tailor a solution based on your situation</li>
+                    <li>All inquiries are handled professionally and confidentially</li>
+                </ul>
                 </div>
             </div>
-            <p class="contact-cta-line">Start the Conversation Today</p>
-            <p style="text-align: center; margin-top: 0.5rem;">
-                <a href="book-consultation.html" class="cta-button">Book a Consultation</a>
-            </p>
         </section>
+
     </main>
 
     <a href="#main-content" class="back-to-top" aria-label="Back to top">
@@ -165,20 +211,51 @@
 
     <script src="js/script.js"></script>
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const data = {
-                name: document.getElementById('contact-name').value,
-                email: document.getElementById('contact-email').value,
-                phone: document.getElementById('contact-phone').value,
-                subject: document.getElementById('contact-subject').value,
-                message: document.getElementById('contact-message').value
-            };
-            const stored = JSON.parse(localStorage.getItem('wrs_contact_inquiries') || '[]');
-            stored.push({ ...data, date: new Date().toISOString() });
-            localStorage.setItem('wrs_contact_inquiries', JSON.stringify(stored));
-            window.location.href = 'thank-you.html?type=contact';
-        });
+        (function() {
+            var form = document.getElementById('contact-form');
+            var formId = form.getAttribute('data-formspree-id');
+            var statusEl = document.getElementById('contact-form-status');
+            var submitBtn = document.getElementById('contact-submit-btn');
+            var subjectHidden = document.getElementById('contact-hidden-subject');
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (!formId || formId === 'YOUR_FORMSPREE_FORM_ID') {
+                    statusEl.textContent = 'Form is not configured. Please set your Formspree form ID (see form comment in contact.html).';
+                    statusEl.className = 'contact-form-status error';
+                    return;
+                }
+                var name = document.getElementById('contact-name').value;
+                subjectHidden.value = 'Contact inquiry from ' + name;
+                var formData = new FormData(form);
+                submitBtn.disabled = true;
+                statusEl.textContent = 'Sending…';
+                statusEl.className = 'contact-form-status';
+
+                fetch('https://formspree.io/f/' + formId, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                })
+                .then(function(response) {
+                    if (response.ok) {
+                        statusEl.textContent = 'Thank you. Your message has been sent to wrs.recruitment.hr@gmail.com.';
+                        statusEl.className = 'contact-form-status success';
+                        form.reset();
+                        window.location.href = 'thank-you.html?type=contact';
+                    } else {
+                        return response.json().then(function(data) {
+                            throw data;
+                        });
+                    }
+                })
+                .catch(function(err) {
+                    statusEl.textContent = err.error || 'Something went wrong. Please try again or email wrs.recruitment.hr@gmail.com directly.';
+                    statusEl.className = 'contact-form-status error';
+                    submitBtn.disabled = false;
+                });
+            });
+        })();
     </script>
 </body>
 </html>
