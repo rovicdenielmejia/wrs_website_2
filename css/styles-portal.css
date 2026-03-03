@@ -107,7 +107,7 @@
 .conversion-card h3 {
     font-size: 1.25rem;
     margin-bottom: 0.75rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .conversion-card p {
@@ -500,7 +500,7 @@
 .why-choose-card-title {
     font-size: 1.15rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: #C19D43;
     margin: 0 0 0.75rem 0;
     padding-right: 2.5rem;
 }
@@ -635,7 +635,7 @@
 .dashboard-card h3 {
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .stat-row {
@@ -757,7 +757,7 @@
 .platform-card h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: var(--accent-blue);
+    color: #C19D43;
 }
 
 .platform-card p {
@@ -812,6 +812,7 @@
 .pricing-card h3 {
     font-size: 1.5rem;
     margin-bottom: 0.25rem;
+    color: #C19D43;
 }
 
 .pricing-target {
@@ -847,7 +848,7 @@
 
 .pricing-features h3 {
     margin-bottom: 1rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 /* Automation list */
@@ -899,7 +900,7 @@
 .about-snapshot-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .about-snapshot-card p {
@@ -949,7 +950,7 @@
 .process-section-title {
     font-size: clamp(1.75rem, 4vw, 2.25rem);
     font-weight: 700;
-    color: var(--text-primary);
+    color: #C19D43;
     margin: 0 0 0.5rem 0;
 }
 
@@ -1181,7 +1182,7 @@
 .about-purpose-vision-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .about-purpose-vision-card p {
@@ -1226,7 +1227,7 @@
 .about-team-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    color: #C19D43;
 }
 
 .about-team-card p {
@@ -1454,6 +1455,10 @@
     padding: 2rem 1.75rem;
 }
 
+.page-jobs .section-title {
+    color: var(--text-primary);
+}
+
 .page-jobs .job-card h3 {
     color: var(--text-on-dark);
     font-size: 1.35rem;
@@ -1461,7 +1466,7 @@
 }
 
 .page-jobs .job-card:hover h3 {
-    color: #C19D43;
+    color: var(--text-primary);
 }
 
 .page-jobs .job-meta span {
@@ -1503,7 +1508,12 @@
     }
 }
 
-/* Blog page – premium header and layout */
+/* Blog page – premium header and layout (titles not gold per "except blogs") */
+.premium-layout.page-blogs .section-title,
+.premium-layout.page-blog-post .section-title {
+    color: var(--text-primary);
+}
+
 .premium-layout.page-blogs .blog-page-header {
     padding: 4rem 0 3rem;
     text-align: center;
@@ -1568,7 +1578,7 @@
 }
 
 .blog-card-link-wrap:hover .blog-card-title {
-    color: #C19D43;
+    color: var(--accent-blue);
 }
 
 .blog-card-link-wrap:hover .blog-card-link {
@@ -1689,7 +1699,7 @@
     font-size: clamp(2rem, 5vw, 2.75rem);
     font-weight: 800;
     line-height: 1.2;
-    color: #C19D43;
+    color: var(--text-primary);
     margin: 0;
 }
 
@@ -1711,7 +1721,7 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    color: #C19D43;
+    color: var(--text-primary);
     margin: 0 0 0.75rem 0;
 }
 
@@ -1744,7 +1754,7 @@
 .blog-related-title {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #C19D43;
+    color: var(--text-primary);
     margin: 0 0 1rem 0;
 }
 
@@ -1808,14 +1818,14 @@
 .blog-related-card-title {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #C19D43;
+    color: var(--text-primary);
     line-height: 1.35;
     margin: 0;
     transition: color 0.2s ease;
 }
 
 .blog-related-card a:hover .blog-related-card-title {
-    color: #C19D43;
+    color: var(--accent-blue);
 }
 
 .blog-related-card-read {
@@ -1858,7 +1868,7 @@
 .blog-newsletter-title {
     font-size: 1.35rem;
     font-weight: 700;
-    color: #C19D43;
+    color: var(--text-primary);
     margin: 0 0 0.5rem 0;
 }
 
@@ -1925,7 +1935,7 @@
 .blog-article-content h2 {
     font-size: 1.35rem;
     font-weight: 700;
-    color: var(--gold);
+    color: var(--text-primary);
     margin-top: 2.5rem;
     margin-bottom: 0.75rem;
     line-height: 1.3;
@@ -2022,7 +2032,7 @@
 .blog-post-title {
     font-size: clamp(1.75rem, 4vw, 2.25rem);
     margin-bottom: 1.5rem;
-    color: #C19D43;
+    color: var(--text-primary);
     line-height: 1.25;
 }
 
@@ -2033,7 +2043,7 @@
 
 .blog-post-content h2 {
     font-size: 1.25rem;
-    color: var(--gold);
+    color: var(--text-primary);
     margin-top: 2rem;
     margin-bottom: 0.75rem;
 }
@@ -2162,7 +2172,7 @@
 .blog-card-title {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #C19D43;
+    color: var(--text-primary);
     line-height: 1.3;
     transition: color 0.2s ease;
 }
@@ -2644,7 +2654,7 @@
 .contact-page-details h2 {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .contact-form-intro {
@@ -2743,7 +2753,7 @@
 .contact-block-title {
     font-size: 1.25rem;
     margin-bottom: 1.25rem;
-    color: var(--text-primary);
+    color: #C19D43;
 }
 
 .contact-get-in-touch .contact-page-details {
@@ -2886,7 +2896,7 @@
 .employer-challenge-card h3 {
     font-size: 1.15rem;
     margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    color: #C19D43;
 }
 
 .employer-challenge-card p {
@@ -2949,7 +2959,7 @@
 .why-partner-card h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .why-partner-card p {
@@ -3259,7 +3269,7 @@
 .talent-feature-card h3 {
     font-size: 1.05rem;
     margin-bottom: 0.5rem;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .talent-feature-card p {
@@ -3304,7 +3314,7 @@
 .talent-card h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    color: #C19D43;
 }
 
 .talent-card p {
@@ -3521,7 +3531,7 @@
     font-weight: 800;
     text-align: center;
     line-height: 1.2;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 .premium-layout .premium-section .section-subtitle,
@@ -3561,7 +3571,7 @@
 .about-section-label {
     letter-spacing: 0.12em;
     font-weight: 700;
-    color: var(--gold);
+    color: #C19D43;
 }
 
 /* Premium cards – Core Values / Purpose-Vision */
@@ -3588,6 +3598,7 @@
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 0.6rem;
+    color: #C19D43;
 }
 
 /* Founder block – premium */
@@ -4034,6 +4045,7 @@
     font-weight: 700;
     margin-bottom: 0.6rem;
     letter-spacing: -0.01em;
+    color: #C19D43;
 }
 
 .premium-layout .why-section > .container > div p {
