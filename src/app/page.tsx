@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, Building2, Users, TrendingUp, Shield, Globe, Heart } from 'lucide-react';
-import { Hero, SectionDivider } from '@/components/sections/hero';
-import { Section, SectionHeader } from '@/components/sections/section';
+import { Hero } from '@/components/sections/hero';
+import { Section, SectionHeader, SectionDivider } from '@/components/sections/section';
 import { CardGrid, WhyList, ConversionCard } from '@/components/sections/cards';
 import { CTASection } from '@/components/sections/cta';
 import { Button } from '@/components/ui/button';
