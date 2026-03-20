@@ -6,11 +6,13 @@ interface SectionProps {
   dark?: boolean;
   alt?: boolean;
   soft?: boolean;
+  id?: string;
 }
 
-export function Section({ children, className, dark, alt, soft }: SectionProps) {
+export function Section({ children, className, dark, alt, soft, id }: SectionProps) {
   return (
     <section
+      id={id}
       className={cn(
         'py-section',
         dark && 'bg-navy text-text-dark',
