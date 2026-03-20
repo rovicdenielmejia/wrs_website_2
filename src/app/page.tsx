@@ -8,10 +8,10 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 
 const stats = [
-  { value: '500+', label: 'Successful Placements' },
+  { value: '100+', label: 'Successful Placements' },
   { value: '98%', label: 'Client Satisfaction' },
   { value: '50+', label: 'Partner Companies' },
-  { value: '5+', label: 'Years Experience' },
+  { value: '3+', label: 'Years Experience' },
 ];
 
 const services = [
@@ -46,26 +46,112 @@ const services = [
 ];
 
 const whyChooseUs = [
-  'Quality over volume — we prioritize the right fit over filling positions quickly',
-  'Process-driven approach with structured interviews and assessments',
-  'Alignment with your company culture and long-term goals',
-  'Focus on long-term stability and retention, not just quick placements',
-  'Dedicated account management and ongoing support',
-  'Deep understanding of the Philippine job market',
+  'Structured & systematic recruitment process',
+  'Transparent communication',
+  'SME-focused workforce solutions',
+  'Flexible engagement models',
+  'Remote setup = lower client overhead',
+  'Practical HR support beyond hiring',
 ];
 
 const testimonials = [
   {
     quote:
-      '"WRS helped us find exceptional talent that aligned perfectly with our culture. Their process was thorough and professional."',
-    author: 'Maria Santos',
-    title: 'HR Director, Tech Innovations Inc.',
+      '"Reliable and Structured Recruitment Support. We struggled with inconsistent hiring before partnering with WRS. The structured screening process helped us shortlist better candidates quickly. Communication was clear, and turnaround time was faster than expected."',
+    author: 'Operations Manager',
+    title: 'Retail SME (Quezon City)',
   },
   {
     quote:
-      '"The executive search team found us a CFO who transformed our financial operations. Exceptional results."',
-    author: 'James Chen',
-    title: 'CEO, Growth Partners PH',
+      '"Helped Us Scale Without Hiring an Internal Recruiter. As a growing business, we did not have a dedicated HR recruiter. WRS handled sourcing, screening, and coordination professionally. It felt like having an in-house recruitment partner."',
+    author: 'Business Owner',
+    title: 'Food & Beverage Group',
+  },
+  {
+    quote:
+      '"Quality Over Quantity. Instead of sending dozens of resumes, WRS endorsed a focused shortlist of candidates who actually matched our requirements. We filled the role within two weeks."',
+    author: 'HR Supervisor',
+    title: 'Logistics Company',
+  },
+  {
+    quote:
+      '"Professional and Supportive. The interview coaching and feedback helped me improve my confidence. I secured a better opportunity within weeks."',
+    author: 'Marketing Specialist',
+    title: 'Job Seeker',
+  },
+];
+
+const processSteps = [
+  {
+    step: '01',
+    title: 'Consultation',
+    description: 'We discuss your hiring needs, culture, and requirements.',
+  },
+  {
+    step: '02',
+    title: 'Candidate Sourcing',
+    description: 'We source and attract qualified candidates from our network and channels.',
+  },
+  {
+    step: '03',
+    title: 'Screening',
+    description: 'Pre-screening, assessments, and shortlisting so you see the best fit.',
+  },
+  {
+    step: '04',
+    title: 'Placement',
+    description: 'We support offer, onboarding, and handover so your new hire integrates smoothly.',
+  },
+  {
+    step: '05',
+    title: 'Ongoing Support',
+    description: 'Post-placement support and retention guidance when you need it.',
+  },
+];
+
+const pricingPlans = [
+  {
+    name: 'Starter',
+    price: '₱10,000 – ₱18,000',
+    period: 'per successful hire',
+    description: 'Essential Recruitment Support for startups & small teams hiring selectively.',
+    features: [
+      'Hiring support for 1–2 roles',
+      'Structured candidate screening',
+      'Shortlisted pre-qualified candidates (3–5)',
+      'Basic role consultation',
+      '30-Day Replacement Support',
+    ],
+  },
+  {
+    name: 'Growth',
+    price: '₱30,000 – ₱60,000',
+    period: 'per month',
+    description: 'Strategic Hiring + HR Support for SMEs scaling operations.',
+    popular: true,
+    features: [
+      'Multi-role hiring support',
+      'Advanced screening & culture-fit evaluation',
+      'Workforce planning consultation',
+      'Recruitment workflow advisory',
+      'Onboarding structure guidance',
+      '60-Day Replacement Coverage',
+    ],
+  },
+  {
+    name: 'Enterprise',
+    price: '₱60,000 – ₱120,000',
+    period: 'per month',
+    description: 'Full Workforce Recruitment & HR Solutions for large teams & long-term partnership.',
+    features: [
+      'Dedicated recruitment support (RPO-style)',
+      'Executive & leadership hiring',
+      'Workforce planning & forecasting',
+      'HR systems advisory',
+      'Talent pipeline development',
+      'Confidential search support',
+      'Ongoing strategic consultation',
+    ],
   },
 ];
 
@@ -130,18 +216,82 @@ export default function HomePage() {
           <SectionHeader
             label="Testimonials"
             title="What Our Clients Say"
-            subtitle="Real stories from real clients who trusted us with their talent needs"
+            subtitle="What employers and professionals say about working with WRS"
           />
-          <div className="grid gap-8 md:grid-cols-2">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="p-8">
-                <blockquote className="mb-4 text-lg font-serif italic text-text-dark">
+              <Card key={index} className="p-6">
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-gold">★</span>
+                  ))}
+                </div>
+                <blockquote className="mb-4 text-sm text-text-dark">
                   {testimonial.quote}
                 </blockquote>
                 <div>
-                  <div className="font-bold text-gold">{testimonial.author}</div>
-                  <div className="text-sm text-text-soft">{testimonial.title}</div>
+                  <div className="font-bold text-gold text-sm">{testimonial.author}</div>
+                  <div className="text-xs text-text-soft">{testimonial.title}</div>
                 </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section dark>
+        <div className="container">
+          <SectionHeader
+            label="Our Process"
+            title="How We Work"
+            subtitle="From consultation to ongoing support; we guide you every step of the way"
+          />
+          <div className="grid gap-8 md:grid-cols-5">
+            {processSteps.map((step) => (
+              <Card key={step.step} className="p-6 text-center">
+                <div className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-gold/20 text-xl font-bold text-gold mb-4">
+                  {step.step}
+                </div>
+                <h4 className="mb-2 font-bold text-gold">{step.title}</h4>
+                <p className="text-sm text-text-soft">{step.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section alt>
+        <div className="container">
+          <SectionHeader
+            label="Pricing"
+            title="Flexible Engagement Models"
+            subtitle="We offer simple and scalable options designed for SMEs and growing teams"
+          />
+          <div className="grid gap-8 md:grid-cols-3">
+            {pricingPlans.map((plan) => (
+              <Card key={plan.name} className={`p-8 ${plan.popular ? 'border-2 border-gold' : ''}`}>
+                {plan.popular && (
+                  <span className="inline-block px-3 py-1 text-xs font-semibold bg-gold text-white rounded-full mb-4">
+                    Most Popular
+                  </span>
+                )}
+                <h3 className="text-xl font-bold text-gold mb-2">{plan.name}</h3>
+                <div className="mb-2">
+                  <span className="text-3xl font-bold text-gold">{plan.price}</span>
+                </div>
+                <p className="text-sm text-text-soft mb-6">{plan.period}</p>
+                <p className="text-sm text-text-soft mb-6">{plan.description}</p>
+                <ul className="space-y-2 mb-6">
+                  {plan.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-2 text-sm text-text-soft">
+                      <span className="text-gold">✓</span>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+                <Button variant={plan.popular ? 'default' : 'outline'} className="w-full">
+                  <Link href="/solutions/employers#pricing-heading">Learn More</Link>
+                </Button>
               </Card>
             ))}
           </div>

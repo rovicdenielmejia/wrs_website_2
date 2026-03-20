@@ -47,11 +47,12 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gold">Email</h4>
-                    <a href="mailto:wrs.recruitment.hr@gmail.com" className="text-text-soft hover:text-accent-blue transition-colors">
-                      wrs.recruitment.hr@gmail.com
-                    </a>
+                    <p className="text-xs text-text-soft mb-1">Preferred for formal inquiries & documentation</p>
                     <a href="mailto:wrs.workforce.hr@gmail.com" className="block text-text-soft hover:text-accent-blue transition-colors">
                       wrs.workforce.hr@gmail.com
+                    </a>
+                    <a href="mailto:wrs.recruitment.hr@gmail.com" className="block text-text-soft hover:text-accent-blue transition-colors">
+                      wrs.recruitment.hr@gmail.com
                     </a>
                   </div>
                 </div>
@@ -61,7 +62,8 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-gold" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gold">Phone</h4>
+                    <h4 className="font-bold text-gold">Phone / SMS / Viber / WhatsApp</h4>
+                    <p className="text-xs text-text-soft mb-1">Quick support & fast responses</p>
                     <a href="tel:+639755636276" className="text-text-soft hover:text-accent-blue transition-colors">
                       +63 975 563 6276
                     </a>
@@ -73,8 +75,10 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-gold" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-gold">Location</h4>
-                    <p className="text-text-soft">Philippines</p>
+                    <h4 className="font-bold text-gold">Office Location</h4>
+                    <p className="text-text-soft">Workforce Recruitment & HR Solutions PH</p>
+                    <p className="text-text-soft">Echague, Isabela, Philippines 3309</p>
+                    <p className="text-xs text-text-soft mt-1">Remote / flexible setup · Meet by appointment</p>
                   </div>
                 </div>
 
@@ -84,7 +88,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gold">Business Hours</h4>
-                    <p className="text-text-soft">Monday - Friday: 9:00 AM - 6:00 PM (PHT)</p>
+                    <p className="text-text-soft">Monday – Friday: 8:00 AM – 6:00 PM (PHT)</p>
+                    <p className="text-text-soft">Saturday – Sunday: By Appointment Only</p>
                   </div>
                 </div>
               </div>
