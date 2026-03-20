@@ -68,3 +68,5 @@ next-env.d.ts
 # Optional: Keep sensitive files local
 # admin-credentials.json
 # email-config.json
+
+.vercel
