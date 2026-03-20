@@ -1,42 +1,153 @@
-# Workforce Recruitment Solutions (WRS)
+# WRS 2.0 - Recruitment Platform
 
-**HR & Recruitment Solutions— information and hiring site.**
+Modern Next.js recruitment platform for Workforce Recruitment & HR Solutions PH.
 
-© 2026 All Rights Reserved | EST. 2023
+## What This Is
 
-## What this site is
+A full-featured SaaS recruitment platform built with Next.js 14, featuring:
+- Public website with job listings and company information
+- Admin dashboard with Applicant Tracking System (ATS)
+- CMS for blogs and content management
+- Contact and consultation forms
+- RESTful API for all functionality
 
-- **Information:** Services, solutions, pricing, about, FAQ, blogs, platform and technology pages.
-- **Hiring:** Job listings, employer solutions, and contact/consultation for both employers and job seekers.
-- **No database, no portals, no logins.** All contact and hiring intent goes through **Book a consultation**, **Jobs**, and standard contact (email/phone).
+## Quick Start
 
-## Main pages
+```bash
+# Install dependencies
+npm install
 
-| Page | Purpose |
-|------|--------|
-| **Home** | Hero, services overview, for employers / job seekers CTAs → book consultation & jobs |
-| **Why Us** | Value proposition |
-| **Solutions** | Employer, Enterprise, Global, Talent solutions |
-| **Services** | Recruitment, HR consultations, recruitment process |
-| **Pricing** | Plans and contact for employer plans |
-| **About** | Company and team |
-| **Jobs** | Job listings and career information |
-| **FAQ** | Common questions |
-| **Blogs** | Content |
-| **Book a consultation** | Contact form / consultation request |
-| **Legal** | Privacy, Terms |
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your database URL
 
-## Tech
+# Generate Prisma client
+npm run db:generate
 
-- Static HTML, CSS, JavaScript.
-- Deploy on Vercel (or any static host). `vercel.json` has rewrites and redirects.
-- Local preview: `npm run dev` (runs `vercel dev`).
+# Push schema to database
+npm run db:push
 
-## Repo structure
+# Start development server
+npm run dev
+```
 
-- Root: main HTML pages.
-- `solutions/`, `services/`, `platform/`, `legal/`: section pages.
-- `css/`, `js/`, `Assets/`: styles, scripts, images.
-- `docs/`: documentation.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-See `docs/FOLDER_STRUCTURE.md` for the full map.
+## Tech Stack
+
+| Component | Technology |
+|-----------|------------|
+| Frontend | Next.js 14, React 18, TypeScript |
+| Styling | TailwindCSS, ShadCN UI |
+| Animation | Framer Motion |
+| Database | PostgreSQL |
+| ORM | Prisma |
+| Auth | JWT (jose) |
+| Deployment | Vercel |
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── (public)/           # Public pages
+│   │   ├── page.tsx       # Home
+│   │   ├── jobs/          # Job listings
+│   │   ├── solutions/      # Solutions pages
+│   │   ├── about/          # About page
+│   │   ├── contact/        # Contact page
+│   │   ├── faq/            # FAQ page
+│   │   └── blog/           # Blog pages
+│   ├── (admin)/            # Admin dashboard
+│   │   ├── page.tsx        # Dashboard
+│   │   ├── jobs/           # Job management
+│   │   ├── applicants/     # ATS
+│   │   ├── employers/      # Employer management
+│   │   ├── consultations/  # Consultation tracking
+│   │   └── blogs/          # CMS
+│   └── api/                # API routes
+├── components/             # React components
+│   ├── ui/                 # Base UI components
+│   ├── layout/             # Layout components
+│   └── sections/           # Page sections
+├── lib/                    # Utilities
+│   ├── prisma.ts          # Prisma client
+│   ├── auth.ts            # Authentication
+│   └── utils.ts           # Common utilities
+└── types/                  # TypeScript types
+```
+
+## Features
+
+### Public Website
+- Responsive design with premium dark theme
+- Job listings with filtering and search
+- Company solutions pages
+- Blog/articles section
+- Contact and consultation forms
+- FAQ section
+
+### Admin Dashboard
+- Dashboard with KPIs and statistics
+- Job posting management (CRUD)
+- Applicant tracking system (ATS)
+- Application pipeline management
+- Employer profiles
+- Consultation tracking
+- Blog CMS
+- Inquiry management
+
+### API Endpoints
+- `/api/jobs` - Job listings and management
+- `/api/applications` - Application handling
+- `/api/consultations` - Consultation requests
+- `/api/contact` - Contact form submissions
+- `/api/dashboard` - Dashboard statistics
+
+## Documentation
+
+- [Deployment Guide](./DEPLOYMENT.md) - How to deploy on Vercel
+- [Architecture Overview](./ARCHITECTURE.md) - System architecture
+- [Design System](../docs/DESIGN_SYSTEM.md) - UI/UX design specifications
+- [Component Breakdown](../docs/COMPONENT_BREAKDOWN.md) - Component documentation
+- [Forms List](../docs/FORMS_LIST.md) - All forms and fields
+
+## Environment Variables
+
+```env
+# Database
+DATABASE_URL="postgresql://..."
+
+# Auth
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="your-secret-key"
+
+# JWT
+JWT_SECRET="your-jwt-secret"
+```
+
+## Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run db:generate` | Generate Prisma client |
+| `npm run db:push` | Push schema to database |
+| `npm run db:migrate` | Run database migrations |
+
+## Deployment
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+
+Quick deploy to Vercel:
+```bash
+npm install -g vercel
+vercel --prod
+```
+
+## License
+
+© 2026 Workforce Recruitment & HR Solutions PH. All Rights Reserved.

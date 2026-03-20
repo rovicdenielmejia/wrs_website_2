@@ -1,5 +1,5 @@
 # Git Ignore File
-# Workforce Recruitment Solutions
+# Workforce Recruitment Solutions - WRS 2.0 Platform
 
 # Environment variables (never commit secrets)
 .env
@@ -40,19 +40,30 @@ desktop.ini
 # Vercel
 .vercel/
 
-# Build files (if any)
+# Build files
 dist/
 build/
 *.min.js
 *.min.css
+
+# Next.js build output
+.next/
+out/
 
 # Temporary files
 *.tmp
 *.temp
 .cache/
 
-# Node modules (if using build tools)
+# Node modules
 node_modules/
+
+# Prisma
+prisma/migrations/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
 
 # Optional: Keep sensitive files local
 # admin-credentials.json

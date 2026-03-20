@@ -4,9 +4,5 @@
 User-agent: *
 Allow: /
 
-# Allow key pages
-Allow: /WorkforceRecruitmentSolution.html
-Allow: /thank-you.html
-
 # Sitemap
 Sitemap: https://workforcerecruitmentsolutions.com/sitemap.xml
