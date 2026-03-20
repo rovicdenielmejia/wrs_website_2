@@ -121,6 +121,18 @@ export default function EmployeeRetentionPage() {
               <p className="text-text-soft mb-6">
                 Stable teams build resilient organizations.
               </p>
+
+              <div className="bg-gold/10 p-6 rounded-lg mt-8">
+                <p className="text-text-soft mb-2 font-semibold">
+                  Need support?
+                </p>
+                <p className="text-text-soft">
+                  If you want to improve retention strategies, develop structured hiring processes, or build a stable workforce, <Link href="/contact" className="text-accent-blue hover:underline">contact WRS</Link> for recruitment and workforce solutions tailored to your business needs.
+                </p>
+                <p className="text-text-soft mt-4 font-semibold">
+                  Let's build a team that stays.
+                </p>
+              </div>
             </div>
 
             <div className="mt-12 pt-8 border-t border-text-muted">

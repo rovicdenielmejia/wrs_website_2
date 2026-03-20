@@ -135,6 +135,18 @@ export default function RemoteWorkPhilippinesPage() {
               <p className="text-text-soft mb-6">
                 SMEs that adapt with clear systems and structured oversight can leverage flexibility without sacrificing productivity.
               </p>
+
+              <div className="bg-gold/10 p-6 rounded-lg mt-8">
+                <p className="text-text-soft mb-2 font-semibold">
+                  Need support?
+                </p>
+                <p className="text-text-soft">
+                  If you want to build a remote-capable team, develop effective remote work policies, or find skilled professionals for your organization, <Link href="/contact" className="text-accent-blue hover:underline">contact WRS</Link> for recruitment and workforce solutions tailored to your business needs.
+                </p>
+                <p className="text-text-soft mt-4 font-semibold">
+                  Let's build your remote-ready team today.
+                </p>
+              </div>
             </div>
 
             <div className="mt-12 pt-8 border-t border-text-muted">

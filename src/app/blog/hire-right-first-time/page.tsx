@@ -144,6 +144,18 @@ export default function HireRightFirstTimePage() {
               <p className="text-text-soft mb-6">
                 A clear structure—defining fit, screening beyond the resume, assessing attitude, aligning expectations, and using data—reduces turnover, builds trust, and enhances team performance.
               </p>
+
+              <div className="bg-gold/10 p-6 rounded-lg mt-8">
+                <p className="text-text-soft mb-2 font-semibold">
+                  Need support?
+                </p>
+                <p className="text-text-soft">
+                  If you want to hire the right employee the first time with a structured recruitment process, <Link href="/contact" className="text-accent-blue hover:underline">contact WRS</Link> for recruitment and workforce solutions tailored to your business needs.
+                </p>
+                <p className="text-text-soft mt-4 font-semibold">
+                  Let's find the right fit for your team.
+                </p>
+              </div>
             </div>
 
             <div className="mt-12 pt-8 border-t border-text-muted">

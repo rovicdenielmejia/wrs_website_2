@@ -155,6 +155,18 @@ export default function PreScreeningPage() {
               <p className="text-text-soft mb-6">
                 Intentional hiring today creates a more resilient organization tomorrow.
               </p>
+
+              <div className="bg-gold/10 p-6 rounded-lg mt-8">
+                <p className="text-text-soft mb-2 font-semibold">
+                  Need support?
+                </p>
+                <p className="text-text-soft">
+                  If you want to avoid hiring mistakes and build a structured recruitment process, <Link href="/contact" className="text-accent-blue hover:underline">contact WRS</Link> for recruitment and workforce solutions tailored to your business needs.
+                </p>
+                <p className="text-text-soft mt-4 font-semibold">
+                  Let's hire smarter from the start.
+                </p>
+              </div>
             </div>
 
             <div className="mt-12 pt-8 border-t border-text-muted">
