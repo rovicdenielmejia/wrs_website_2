@@ -1,9 +1,23 @@
 'use client';
 
 import * as React from 'react';
-import { Slot as RadixSlot } from '@radix-ui/react-slot';
 import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
+
+const Slot = React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement> & { children?: React.ReactNode }>(
+  ({ children, ...props }, ref) => {
+    if (React.Children.count(children) === 1 && React.isValidElement(children)) {
+      const child = children as React.ReactElement<Record<string, unknown>>;
+      return React.cloneElement(child, {
+        ...props,
+        ref,
+        ...child.props,
+      } as Record<string, unknown>);
+    }
+    return <span ref={ref} {...props}>{children}</span>;
+  }
+);
+Slot.displayName = 'Slot';
 
 const buttonVariants = cva(
   'inline-flex items-center justify-center whitespace-nowrap text-sm font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-60',
@@ -14,6 +28,8 @@ const buttonVariants = cva(
           'bg-gradient-to-r from-accent-blue to-accent-blue-hover text-white shadow-btn-glow hover:translate-y-[-3px] hover:shadow-btn-hover-glow',
         outline:
           'border-2 border-accent-blue bg-transparent text-accent-blue hover:bg-accent-blue/15 hover:text-white',
+        'outline-small':
+          'border border-accent-blue bg-transparent text-accent-blue hover:bg-accent-blue/10 text-sm px-3 py-1',
         ghost:
           'text-text-dark hover:bg-white/10',
         link:
@@ -43,7 +59,7 @@ export interface ButtonProps
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
-    const Comp = asChild ? RadixSlot : 'button';
+    const Comp = asChild ? Slot : 'button';
     return (
       <Comp
         className={cn(buttonVariants({ variant, size, className }))}

@@ -15,7 +15,7 @@ const jobCreateSchema = z.object({
   industry: z.string().min(1, 'Industry is required'),
   jobType: z.enum(['FULL_TIME', 'PART_TIME', 'CONTRACT', 'REMOTE']),
   status: z.enum(['DRAFT', 'ACTIVE', 'CLOSED', 'ARCHIVED']).default('DRAFT'),
-  employerId: z.string().optional(),
+  employerId: z.string().min(1, 'Employer ID is required'),
   applyFormUrl: z.string().url().optional().or(z.literal('')),
   imageUrl: z.string().url().optional().or(z.literal('')),
 });
